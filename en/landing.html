@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Agents in the Clinic · Healthcare Workbook · INEMA.CLUB PRO</title>
+<meta content="Healthcare workbook for the AI Work Architect course: a clinic administrative process specified with AI agents, medical records out of reach, and governance in writing." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#0E0D14;--bg2:#15131d;--panel:#1a1824;--ink:#ECE6D9;--ink-soft:#C7C2D0;--muted:#948DA6;--faint:#6C6580;
+    --line:#2A2637;--line2:#37324a;--accent:#7CE0C6;--accent-ink:#0E0D14;--warm:#F2B45C;
+    --serif:"Newsreader",Georgia,serif;--sans:"Inter",system-ui,sans-serif;--mono:"Space Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  header.top{padding:26px 0}
+  header.top .wrap{display:flex;align-items:center;gap:10px}
+  header.top .mark{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--accent);text-decoration:none;font-weight:700}
+  header.top .pro{background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:2px 6px;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-decoration:none;margin-left:8px}
+  header.top .course{color:var(--muted);font-size:12px;letter-spacing:.04em;border-left:1px solid var(--line2);padding-left:10px;margin-left:2px;font-family:var(--mono)}
+  .hero{position:relative;padding:10vh 0 9vh;border-bottom:1px solid var(--line);overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(55% 48% at 80% 20%,rgba(124,224,198,.14),transparent 60%),radial-gradient(90% 90% at 50% 40%,var(--bg2),var(--bg) 72%)}
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,6vw,64px);line-height:1.05;letter-spacing:-.02em;margin:0 0 22px;max-width:18ch}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lead{font-family:var(--serif);font-size:clamp(18px,2vw,22px);line-height:1.55;color:var(--ink-soft);max-width:46ch;margin:0 0 34px}
+  .cta{display:inline-block;font-family:var(--mono);font-size:13px;letter-spacing:.06em;background:var(--accent);color:var(--accent-ink);text-decoration:none;border-radius:99px;padding:15px 26px;font-weight:700}
+  .cta:hover{opacity:.92}
+  .sub{color:var(--muted);font-size:13.5px;margin-top:14px;font-family:var(--mono)}
+  .herofig svg{width:100%;height:auto;display:block}
+
+  section{padding:8vh 0}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,36px);margin:0 0 28px}
+
+  .resultados{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .resultado{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:22px 24px}
+  .resultado p{margin:0;font-size:15px;color:var(--ink-soft);line-height:1.55}
+  .resultado p b{color:var(--ink)}
+
+  .tese{font-family:var(--serif);font-size:clamp(20px,2.4vw,26px);line-height:1.5;color:var(--ink);max-width:52ch;margin:0}
+  .tese em{color:var(--accent);font-style:italic}
+  .numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:34px}
+  .num{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:22px 24px}
+  .num .big{font-family:var(--serif);font-size:44px;line-height:1;color:var(--accent);margin:0 0 8px}
+  .num p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5}
+  .num p b{color:var(--ink-soft);font-weight:600}
+
+  .aulas{display:grid;gap:14px}
+  .au{display:grid;grid-template-columns:52px 1fr auto;gap:18px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 22px}
+  .au .num{font-family:var(--serif);font-size:26px;color:var(--accent);text-align:center;border:0;background:none;padding:0}
+  .au h3{font-family:var(--serif);font-weight:500;font-size:19px;margin:0 0 4px}
+  .au p{margin:0;color:var(--muted);font-size:14px}
+  .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  .au:hover{border-color:var(--accent)}
+
+  .publico{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .publico .col{background:var(--panel);padding:22px 24px}
+  .publico .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px}
+  .publico .col.sim .lbl{color:var(--accent)}
+  .publico .col.nao .lbl{color:var(--muted)}
+  .publico ul{margin:0;padding:0;list-style:none}
+  .publico li{position:relative;padding-left:20px;margin:0 0 10px;color:var(--ink-soft);font-size:14.5px;line-height:1.5}
+  .publico li::before{content:"—";position:absolute;left:0;color:var(--faint)}
+
+  .fontes{color:var(--muted);font-size:13.5px;line-height:1.7;max-width:72ch}
+  .fontes a{color:var(--ink-soft)}
+
+  footer{border-top:1px solid var(--line);padding:6vh 0 8vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic}
+
+  @media(max-width:820px){ .hero .wrap{grid-template-columns:1fr} .herofig{max-width:320px} }
+  @media(max-width:720px){ .publico{grid-template-columns:1fr} .au{grid-template-columns:44px 1fr} .au .meta{grid-column:2;text-align:left} }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<link href="https://inematds.github.io/arquiteto-agentes-saude/landing.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/arquiteto-agentes-saude/en/landing.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/arquiteto-agentes-saude/es/landing.html" hreflang="es" rel="alternate"/></head>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../landing.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./landing.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/landing.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<header class="top"><div class="wrap">
+<a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+<a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+<span class="course">Agents in the Clinic</span>
+</div></header>
+<section class="hero"><div class="wrap">
+<div>
+<p class="kicker">Professional Workbook · Healthcare · 3 lessons</p>
+<h1>Agents in the clinic: <em>the administrative side</em> for the AI, people for the team</h1>
+<p class="lead">In 3 lessons, you’ll take an administrative process from your clinic (confirmations, claim denials, treatment plans) and leave with it specified in the Agent Architect Kit: medical records out of reach, confidentiality as a constraint, and one owner for each permission. No coding, no video.</p>
+<a class="cta" href="curso.html#trilha">get started now →</a>
+<p class="sub">~21 to 24 min per lesson · assumes the core course · nothing to download</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect fill="#1a1824" height="180" rx="6" stroke="#948DA6" stroke-width="2" width="260" x="20" y="30"></rect>
+<rect fill="#221f2e" height="120" rx="3" stroke="#948DA6" stroke-width="2" width="60" x="190" y="50"></rect>
+<circle cx="240" cy="112" fill="#F2B45C" r="3"></circle>
+<rect fill="#F2B45C" height="14" opacity=".9" rx="2" width="40" x="200" y="60"></rect>
+<path d="M206 67 h28" opacity=".5" stroke="#0E0D14" stroke-width="2"></path>
+<rect fill="#221f2e" height="60" rx="6" stroke="#7CE0C6" stroke-width="2" width="140" x="30" y="140"></rect>
+<rect fill="#7CE0C6" height="8" opacity=".6" rx="3" width="140" x="30" y="140"></rect>
+<rect fill="#ECE6D9" height="26" opacity=".85" rx="3" width="40" x="44" y="118"></rect>
+<path d="M50 126 h28 M50 132 h20 M50 138 h24" opacity=".5" stroke="#0E0D14" stroke-width="2"></path>
+<rect fill="#1a1824" height="22" rx="4" stroke="#948DA6" stroke-width="2" width="30" x="96" y="116"></rect>
+<path d="M104 127 h14" stroke="#7CE0C6" stroke-width="2"></path>
+<circle cx="140" cy="106" fill="#948DA6" r="12"></circle><path d="M128 120 q12 -8 24 0 v20 h-24z" fill="#948DA6"></path>
+<path d="M178 40 v170" stroke="#F2B45C" stroke-dasharray="6 5" stroke-width="2"></path>
+<circle cx="70" cy="84" fill="#7CE0C6" opacity=".9" r="10"></circle><path d="M60 96 q10 -6 20 0 v14 h-20z" fill="#7CE0C6" opacity=".9"></path>
+<path d="M86 90 h18" stroke="#7CE0C6" stroke-width="2"></path>
+</svg></div>
+</div></section>
+<section><div class="wrap">
+<p class="eyebrow">Professional Workbook</p>
+<p class="tese">At a clinic, the AI conversation gets stuck on “what if it makes a mistake with a patient?” The answer is one line: the agent does the work <em>administrative</em> and never handles clinical work. On this side of the line are the three hours a day reception loses to confirmation calls and denial spreadsheets.</p>
+</div></section>
+<section><div class="wrap">
+<p class="eyebrow">What you'll know how to do</p>
+<h2>Results, not theory</h2>
+<div class="resultados">
+<div class="resultado"><p><b>Separate administrative from clinical</b> with a one-sentence test, and list the ten processes at your clinic that an agent can perform.</p></div>
+<div class="resultado"><p><b>Map confirmations and claim denials</b> across six links, with the reason for the appointment kept out and every patient question routed to a person.</p></div>
+<div class="resultado"><p><b>Decide on the permissions matrix</b> for a clinic agent: medical records kept out, confidentiality and LGPD as constraints, and a named owner for each row.</p></div>
+<div class="resultado"><p><b>Build and rehearse the specification</b> in the kit, starting from the health preset, and test it in an AI chat before building anything.</p></div>
+</div>
+</div></section>
+<section><div class="wrap">
+<p class="eyebrow">Who it’s for</p>
+<h2>Designed for people who manage clinics and medical offices</h2>
+<div class="publico">
+<div class="col sim">
+<p class="lbl">this is for you if</p>
+<ul>
+<li>You’re a clinic or medical office administrator, or the owner who approves what reception does.</li>
+<li>You’ve already taken (or will take) the foundation course Arquiteto de Trabalho com IA and want to apply it to your clinic.</li>
+<li>You want the agent to handle scheduling, confirmations, and claim denials, while the team takes care of people.</li>
+</ul>
+</div>
+<div class="col nao">
+<p class="lbl">this isn't for you if</p>
+<ul>
+<li>You’re looking for AI to support diagnosis, clinical triage, or prescribing: by design, this workbook covers administrative tasks only.</li>
+<li>You don’t yet know the six links, the chain, or the permissions matrix (take the foundation course first).</li>
+</ul>
+</div>
+</div>
+</div></section>
+<section><div class="wrap">
+<p class="eyebrow">Pathway</p>
+<h2>Three lessons, one specified process</h2>
+<div class="aulas">
+<a class="au" href="curso.html#aula-1"><div class="num">1</div><div><h3>Ten clinic processes an agent can handle, and the line it must never cross</h3><p>Leave with the list of ten and one mapped across six links.</p></div><div class="meta">21 min</div></a>
+<a class="au" href="curso.html#aula-2"><div class="num">2</div><div><h3>What the agent can see and do in a clinic</h3><p>Leave with the permissions matrix decided, medical records out of scope, and confidentiality written down.</p></div><div class="meta">21 min</div></a>
+<a class="au" href="curso.html#aula-3"><div class="num">3</div><div><h3>Your specification in the kit: confirmation and denials</h3><p>Leave with the specification built in the kit and rehearsed in an AI chat.</p></div><div class="meta">24 min</div></a>
+</div>
+<p style="margin-top:28px"><a class="cta" href="curso.html#trilha">see the full track →</a></p>
+<p class="fontes" style="margin-top:22px">This workbook assumes you’ve completed the base course <a href="https://inematds.github.io/pffia/" rel="noopener" target="_blank">AI Work Architect</a> and uses the <a href="https://inematds.github.io/kit-arquiteto-agentes/" rel="noopener" target="_blank">Agent Architect Kit</a> with the healthcare preset.</p>
+</div></section>
+<footer><div class="wrap">Agents in the Clinic · Healthcare Workbook · INEMA.CLUB PRO</div></footer>
+</body>
+</html>
