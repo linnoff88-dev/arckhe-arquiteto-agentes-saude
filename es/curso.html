@@ -5,24 +5,24 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="arquiteto-agentes-saude-v5" name="curso"/>
-<title>Agentes en la ClÃ­nica Â· Cuaderno de Salud Â· ARCKHÉ AI PRO</title>
+<title>Agentes en la ClêÂ­nica êÂ· Cuaderno de Salud êÂ· ARCKHê AI PRO</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/aula.css" rel="stylesheet"/>
 <script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
 <!--
-  PROTOCOLO DE DESCOBERTA (formato-curso-v5, Passo 0 â€” INFERIDO a partir do curso-base pffia e do pedido "cadernos por profissÃ£o", 2026-09-07; sujeito a correÃ§Ã£o do usuÃ¡rio):
-  - PÃºblico especÃ­fico: quem administra clÃ­nicas e consultÃ³rios (dono, gestora administrativa, coordenaÃ§Ã£o de recepÃ§Ã£o) e jÃ¡ fez ou vai fazer o curso-base Arquiteto de Trabalho com IA.
-  - ProfissÃµes-alvo (â‰¥2): gestora administrativa de clÃ­nica mÃ©dica Â· gestora de consultÃ³rio odontolÃ³gico (secundÃ¡ria: mÃ©dico dono da clÃ­nica, no papel de quem aprova).
-  - Familiaridade com tecnologia: usa o sistema da clÃ­nica (agenda, faturamento TISS), aplicativo de mensagens e chat de IA para textos; nunca programou.
-  - Resultado prÃ¡tico esperado: sair com um processo ADMINISTRATIVO da clÃ­nica (nunca clÃ­nico) mapeado e especificado no Kit do Arquiteto de Agentes, com dados de paciente fora do alcance e governanÃ§a escrita.
-  - Tempo por sessÃ£o: 15â€“25 min por aula. Caderno complementar: 3 aulas, pressupÃµe o curso-base.
-  Escopo explÃ­cito: o agente executa trabalho administrativo (agenda, confirmaÃ§Ã£o, glosas, documentaÃ§Ã£o, cobranÃ§a). Nenhum exemplo envolve decisÃ£o clÃ­nica, diagnÃ³stico ou prescriÃ§Ã£o.
+  PROTOCOLO DE DESCOBERTA (formato-curso-v5, Passo 0 ê¢â¬â INFERIDO a partir do curso-base pffia e do pedido "cadernos por profissêÂ£o", 2026-09-07; sujeito a correêÂ§êÂ£o do usuêÂ¡rio):
+  - PêÂºblico especêÂ­fico: quem administra clêÂ­nicas e consultêÂ³rios (dono, gestora administrativa, coordenaêÂ§êÂ£o de recepêÂ§êÂ£o) e jêÂ¡ fez ou vai fazer o curso-base Arquiteto de Trabalho com IA.
+  - ProfissêÂµes-alvo (ê¢â°Â¥2): gestora administrativa de clêÂ­nica mêÂ©dica êÂ· gestora de consultêÂ³rio odontolêÂ³gico (secundêÂ¡ria: mêÂ©dico dono da clêÂ­nica, no papel de quem aprova).
+  - Familiaridade com tecnologia: usa o sistema da clêÂ­nica (agenda, faturamento TISS), aplicativo de mensagens e chat de IA para textos; nunca programou.
+  - Resultado prêÂ¡tico esperado: sair com um processo ADMINISTRATIVO da clêÂ­nica (nunca clêÂ­nico) mapeado e especificado no Kit do Arquiteto de Agentes, com dados de paciente fora do alcance e governanêÂ§a escrita.
+  - Tempo por sessêÂ£o: 15ê¢â¬â25 min por aula. Caderno complementar: 3 aulas, pressupêÂµe o curso-base.
+  Escopo explêÂ­cito: o agente executa trabalho administrativo (agenda, confirmaêÂ§êÂ£o, glosas, documentaêÂ§êÂ£o, cobranêÂ§a). Nenhum exemplo envolve decisêÂ£o clêÂ­nica, diagnêÂ³stico ou prescriêÂ§êÂ£o.
 
-  AUDITORIA ANTI-CLONE (contra pffia e os cadernos contÃ¡bil/advocacia):
-  - Personagens e situaÃ§Ãµes novos: Renata (gestora de clÃ­nica mÃ©dica, confirmaÃ§Ã£o e glosas), PatrÃ­cia (consultÃ³rio odontolÃ³gico, planos de tratamento e lista de espera). pffia nÃ£o usa saÃºde.
-  - SequÃªncia de quadros: aula 1 qba@2 Â· qanchor@4; aula 2 qerr@2 Â· qsteps@4; aula 3 qapply@1 Â· qsteps@3. Modos: tarefa Â· analise Â· prompt. ContÃ¡bil usa qba@1/qanchor@3 e tarefaÂ·tarefaÂ·prompt; advocacia usa qba@1/qanchor@4 com aula 2 FUNDAMENTO.
+  AUDITORIA ANTI-CLONE (contra pffia e os cadernos contêÂ¡bil/advocacia):
+  - Personagens e situaêÂ§êÂµes novos: Renata (gestora de clêÂ­nica mêÂ©dica, confirmaêÂ§êÂ£o e glosas), PatrêÂ­cia (consultêÂ³rio odontolêÂ³gico, planos de tratamento e lista de espera). pffia nêÂ£o usa saêÂºde.
+  - SequêÂªncia de quadros: aula 1 qba@2 êÂ· qanchor@4; aula 2 qerr@2 êÂ· qsteps@4; aula 3 qapply@1 êÂ· qsteps@3. Modos: tarefa êÂ· analise êÂ· prompt. ContêÂ¡bil usa qba@1/qanchor@3 e tarefaêÂ·tarefaêÂ·prompt; advocacia usa qba@1/qanchor@4 com aula 2 FUNDAMENTO.
 -->
 <style>
   .view{display:none}.view.active{display:block}
@@ -51,64 +51,64 @@
   @media(max-width:720px){#v-trilha .au{grid-template-columns:44px 1fr}#v-trilha .au .meta{grid-column:2;text-align:left}}
 </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../curso.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/curso.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./curso.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../curso.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/curso.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./curso.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <div class="bar"><div class="bar-inner">
-<span class="brand"><a class="mark" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ AI</a><a class="pro" href="https://ARCKHÉ.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="landing.html">Agentes en la ClÃ­nica</a></span>
-<a class="back" href="#trilha" style="display:none">â† ruta</a>
-<button class="pill" id="pill" style="display:none">0 leÃ­do</button>
+<span class="brand"><a class="mark" href="https://ARCKHê AI" rel="noopener" target="_blank">ARCKHê AI</a><a class="pro" href="https://ARCKHê.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="landing.html">Agentes en la ClêÂ­nica</a></span>
+<a class="back" href="#trilha" style="display:none">ê¢â Â ruta</a>
+<button class="pill" id="pill" style="display:none">0 leêÂ­do</button>
 <button id="revbtn">revisar <span id="revn">0</span></button>
 <button id="exbtn">ejercicios</button>
 <button id="jorbtn">jornada</button>
-<button aria-label="CÃ³mo funciona" id="helpbtn">?</button>
+<button aria-label="CêÂ³mo funciona" id="helpbtn">?</button>
 <button aria-label="Preferencias de lectura" id="prefsbtn">Aa</button>
 <button id="themebtn">tema: oscuro</button>
 </div></div>
 <section class="view" id="v-trilha">
 <header class="t-hero"><div class="wrap">
-<p class="kicker">Cuaderno profesional Â· Salud Â· 3 clases</p>
-<h1>Agentes en la <em>clÃ­nica</em></h1>
-<p class="lead">LlÃ©vate un proceso administrativo de tu clÃ­nica especificado en el Kit del Arquitecto de Agentes: datos de pacientes fuera de su alcance, confidencialidad como restricciÃ³n fija y el agente a cargo de la agenda, las confirmaciones y las objeciones, mientras el equipo se ocupa de las personas.</p>
+<p class="kicker">Cuaderno profesional êÂ· Salud êÂ· 3 clases</p>
+<h1>Agentes en la <em>clêÂ­nica</em></h1>
+<p class="lead">LlêÂ©vate un proceso administrativo de tu clêÂ­nica especificado en el Kit del Arquitecto de Agentes: datos de pacientes fuera de su alcance, confidencialidad como restricciêÂ³n fija y el agente a cargo de la agenda, las confirmaciones y las objeciones, mientras el equipo se ocupa de las personas.</p>
 </div></header>
 <section><div class="wrap">
 <div class="statcards"></div>
 <p class="eyebrow">Clases</p>
-<h2>De recepciÃ³n al seguro mÃ©dico</h2>
+<h2>De recepciêÂ³n al seguro mêÂ©dico</h2>
 <div class="aulas">
 <a class="au on" data-aula="1" href="#aula-1">
 <div class="num">1</div>
-<div><h3>Diez procesos de la clÃ­nica que ejecuta un agente y el lÃ­mite que nunca cruza</h3><p>LlÃ©vate la lista de los diez procesos administrativos y uno de ellos mapeado en seis eslabones, con lo clÃ­nico separado de lo administrativo.</p><div class="prog"><i></i></div></div>
-<div class="meta">21 min Â· abrir â†’</div>
+<div><h3>Diez procesos de la clêÂ­nica que ejecuta un agente y el lêÂ­mite que nunca cruza</h3><p>LlêÂ©vate la lista de los diez procesos administrativos y uno de ellos mapeado en seis eslabones, con lo clêÂ­nico separado de lo administrativo.</p><div class="prog"><i></i></div></div>
+<div class="meta">21 min êÂ· abrir ê¢â â</div>
 </a>
 <a class="au on" data-aula="2" href="#aula-2">
 <div class="num">2</div>
-<div><h3>Lo que el agente puede ver y hacer en una clÃ­nica</h3><p>LlÃ©vate la matriz de permisos de un agente para una clÃ­nica definida, con las historias clÃ­nicas y los datos de salud fuera de su alcance y la confidencialidad establecida por escrito como restricciÃ³n.</p><div class="prog"><i></i></div></div>
-<div class="meta">21 min Â· abrir â†’</div>
+<div><h3>Lo que el agente puede ver y hacer en una clêÂ­nica</h3><p>LlêÂ©vate la matriz de permisos de un agente para una clêÂ­nica definida, con las historias clêÂ­nicas y los datos de salud fuera de su alcance y la confidencialidad establecida por escrito como restricciêÂ³n.</p><div class="prog"><i></i></div></div>
+<div class="meta">21 min êÂ· abrir ê¢â â</div>
 </a>
 <a class="au on" data-aula="3" href="#aula-3">
 <div class="num">3</div>
-<div><h3>Tu especificaciÃ³n en el kit: confirmaciÃ³n y glosas</h3><p>LlÃ©vate la especificaciÃ³n del agente de tu clÃ­nica armada en el kit a partir del preset de salud y ensayada en un chat de IA.</p><div class="prog"><i></i></div></div>
-<div class="meta">24 min Â· abrir â†’</div>
+<div><h3>Tu especificaciêÂ³n en el kit: confirmaciêÂ³n y glosas</h3><p>LlêÂ©vate la especificaciêÂ³n del agente de tu clêÂ­nica armada en el kit a partir del preset de salud y ensayada en un chat de IA.</p><div class="prog"><i></i></div></div>
+<div class="meta">24 min êÂ· abrir ê¢â â</div>
 </a>
 </div>
 </div></section>
 <section><div class="wrap">
 <p class="eyebrow">Antes de empezar</p>
 <h2>Este cuaderno presupone el curso base</h2>
-<p class="fontes">Los seis eslabones, el pedido de largo horizonte, la cadena, el inventario de contexto, la ficha de calidad y la matriz de permisos se explican en el curso <a href="https://linnoff88-dev.github.io/ rel="noopener" target="_blank">Arquitecto de Trabajo con IA</a>. AquÃ­ se aplican a la clÃ­nica. La prÃ¡ctica de la clase 3 usa el <a href="https://linnoff88-dev.github.io/ rel="noopener" target="_blank">Kit del Arquitecto de Agentes</a>, con el preset de salud.</p>
+<p class="fontes">Los seis eslabones, el pedido de largo horizonte, la cadena, el inventario de contexto, la ficha de calidad y la matriz de permisos se explican en el curso <a href="https://linnoff88-dev.github.io/ rel="noopener" target="_blank">Arquitecto de Trabajo con IA</a>. AquêÂ­ se aplican a la clêÂ­nica. La prêÂ¡ctica de la clase 3 usa el <a href="https://linnoff88-dev.github.io/ rel="noopener" target="_blank">Kit del Arquitecto de Agentes</a>, con el preset de salud.</p>
 </div></section>
-<footer><div class="wrap">Agentes en la ClÃ­nica Â· Cuaderno de Salud Â· ARCKHÉ AI PRO</div></footer>
+<footer><div class="wrap">Agentes en la ClêÂ­nica êÂ· Cuaderno de Salud êÂ· ARCKHê AI PRO</div></footer>
 </section>
-<!-- ===== AULA 1 Â· FUNDAMENTO ===== -->
+<!-- ===== AULA 1 êÂ· FUNDAMENTO ===== -->
 <section class="view" data-aula="1" data-tempo="21min" id="v-aula-1">
 <header class="hero"><div class="hero-inner">
 <div>
-<p class="kicker">Cuaderno de Salud Â· Clase 1</p>
-<h1>Diez procesos de la clÃ­nica,<br/><em>y la lÃ­nea que el agente nunca cruza</em></h1>
-<p class="promise">Al terminar esta clase podrÃ¡s enumerar los diez procesos administrativos de tu clÃ­nica que un agente puede ejecutar, distinguir en cada uno lo administrativo de lo clÃ­nico y mapear uno de ellos en seis eslabones.</p>
-<p class="why">En una clÃ­nica, la conversaciÃ³n sobre IA siempre se traba en el mismo lugar: Â«Â¿y si se equivoca con un paciente?Â». La preocupaciÃ³n es legÃ­tima y tiene una soluciÃ³n sencilla: el agente no se acerca a ninguna decisiÃ³n clÃ­nica. Se ocupa de lo que hoy consume el tiempo de recepciÃ³n y de la administradora: llamadas de confirmaciÃ³n, planillas de glosas, cobros particulares y documentos administrativos. AhÃ­ es donde una clÃ­nica de seis consultorios pierde tres horas por dÃ­a, y ahÃ­ es donde empieza el rediseÃ±o.</p>
-<p class="cue"><span class="arw">â†“</span> rol para estudiar</p>
+<p class="kicker">Cuaderno de Salud êÂ· Clase 1</p>
+<h1>Diez procesos de la clêÂ­nica,<br/><em>y la lêÂ­nea que el agente nunca cruza</em></h1>
+<p class="promise">Al terminar esta clase podrêÂ¡s enumerar los diez procesos administrativos de tu clêÂ­nica que un agente puede ejecutar, distinguir en cada uno lo administrativo de lo clêÂ­nico y mapear uno de ellos en seis eslabones.</p>
+<p class="why">En una clêÂ­nica, la conversaciêÂ³n sobre IA siempre se traba en el mismo lugar: êÂ«êÂ¿y si se equivoca con un paciente?êÂ». La preocupaciêÂ³n es legêÂ­tima y tiene una soluciêÂ³n sencilla: el agente no se acerca a ninguna decisiêÂ³n clêÂ­nica. Se ocupa de lo que hoy consume el tiempo de recepciêÂ³n y de la administradora: llamadas de confirmaciêÂ³n, planillas de glosas, cobros particulares y documentos administrativos. AhêÂ­ es donde una clêÂ­nica de seis consultorios pierde tres horas por dêÂ­a, y ahêÂ­ es donde empieza el rediseêÂ±o.</p>
+<p class="cue"><span class="arw">ê¢â â</span> rol para estudiar</p>
 </div>
-<!-- herofig Â· METÃFORA-DO-MUNDO-REAL: o balcÃ£o de recepÃ§Ã£o de uma clÃ­nica, com a porta do consultÃ³rio fechada ao fundo â€” a linha entre o administrativo e o clÃ­nico -->
+<!-- herofig êÂ· METêÂFORA-DO-MUNDO-REAL: o balcêÂ£o de recepêÂ§êÂ£o de uma clêÂ­nica, com a porta do consultêÂ³rio fechada ao fundo ê¢â¬â a linha entre o administrativo e o clêÂ­nico -->
 <div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
 <rect fill="#1a1824" height="180" rx="6" stroke="#948DA6" stroke-width="2" width="260" x="20" y="30"></rect>
 <rect fill="#221f2e" height="120" rx="3" stroke="#948DA6" stroke-width="2" width="60" x="190" y="50"></rect>
@@ -130,95 +130,95 @@
 <div class="layout">
 <div class="col">
 <section class="step" data-fig="1" data-kind="fundamento">
-<h2><span class="n">01</span> Lo administrativo y lo clÃ­nico son dos mundos, y el agente vive en uno solo</h2>
-<p>La regla que organiza todo este cuaderno cabe en una frase: el agente ejecuta trabajo <b>administrativo</b> y nunca interviene en el trabajo <b>clÃ­nico</b>. Lo administrativo es todo lo que ocurrirÃ­a igual si la clÃ­nica fuera una tienda: agendar, confirmar, cobrar, facturar, archivar, responder dÃ³nde queda el estacionamiento. Lo clÃ­nico es todo lo que depende de formaciÃ³n en salud: diagnÃ³stico, conducta, prescripciÃ³n, orientaciÃ³n sobre sÃ­ntomas, lectura de estudios.</p>
-<p>La prueba para separarlos es sencilla: Â¿una recepcionista bien capacitada podrÃ­a hacer esto sin consultar a un profesional de la salud? Si sÃ­, es administrativo y puede asignarse a un agente. Si tendrÃ­a que consultar, es clÃ­nico y queda fuera, sin excepciones, ni siquiera "solo un resumen". No es una limitaciÃ³n de la tecnologÃ­a. Es la misma lÃ­nea que la clÃ­nica ya traza entre la recepciÃ³n y el consultorio.</p>
-<!-- ex-prof --><p>Renata, gerente administrativa de una clÃ­nica mÃ©dica con seis consultorios, hizo una lista de lo que recepciÃ³n hace en un dÃ­a: 90 llamadas de confirmaciÃ³n, 40 mensajes de "Â¿a quÃ© hora es mi consulta?", 12 turnos agregados, la hoja de cÃ¡lculo de objeciones de la obra social, tres certificados de asistencia. Todo es administrativo. Las dos preguntas que recepciÃ³n deriva a enfermerÃ­a por dÃ­a, "Â¿puedo tomar el medicamento antes del examen?", son clÃ­nicas y siguen a cargo de enfermerÃ­a.</p>
+<h2><span class="n">01</span> Lo administrativo y lo clêÂ­nico son dos mundos, y el agente vive en uno solo</h2>
+<p>La regla que organiza todo este cuaderno cabe en una frase: el agente ejecuta trabajo <b>administrativo</b> y nunca interviene en el trabajo <b>clêÂ­nico</b>. Lo administrativo es todo lo que ocurrirêÂ­a igual si la clêÂ­nica fuera una tienda: agendar, confirmar, cobrar, facturar, archivar, responder dêÂ³nde queda el estacionamiento. Lo clêÂ­nico es todo lo que depende de formaciêÂ³n en salud: diagnêÂ³stico, conducta, prescripciêÂ³n, orientaciêÂ³n sobre sêÂ­ntomas, lectura de estudios.</p>
+<p>La prueba para separarlos es sencilla: êÂ¿una recepcionista bien capacitada podrêÂ­a hacer esto sin consultar a un profesional de la salud? Si sêÂ­, es administrativo y puede asignarse a un agente. Si tendrêÂ­a que consultar, es clêÂ­nico y queda fuera, sin excepciones, ni siquiera "solo un resumen". No es una limitaciêÂ³n de la tecnologêÂ­a. Es la misma lêÂ­nea que la clêÂ­nica ya traza entre la recepciêÂ³n y el consultorio.</p>
+<!-- ex-prof --><p>Renata, gerente administrativa de una clêÂ­nica mêÂ©dica con seis consultorios, hizo una lista de lo que recepciêÂ³n hace en un dêÂ­a: 90 llamadas de confirmaciêÂ³n, 40 mensajes de "êÂ¿a quêÂ© hora es mi consulta?", 12 turnos agregados, la hoja de cêÂ¡lculo de objeciones de la obra social, tres certificados de asistencia. Todo es administrativo. Las dos preguntas que recepciêÂ³n deriva a enfermerêÂ­a por dêÂ­a, "êÂ¿puedo tomar el medicamento antes del examen?", son clêÂ­nicas y siguen a cargo de enfermerêÂ­a.</p>
 <div class="quiz" data-answer="b">
-<p class="qk">Ponte a prueba</p><p class="q">Un paciente envÃ­a un mensaje: "me duele la cabeza, Â¿puedo adelantar la consulta?". Â¿QuÃ© parte de eso puede gestionar un agente de la clÃ­nica?</p>
-<button class="opt" data-fb="NÃ£o. Responder sobre a dor, mesmo que 'tome Ã¡gua e descanse', Ã© orientaÃ§Ã£o sobre sintoma: clÃ­nico. Fica fora do agente sem exceÃ§Ã£o." data-k="a">responder que el dolor de cabeza no es una urgencia y mantener el horario</button>
-<button class="opt" data-fb="Isso. Verificar vaga e oferecer horÃ¡rio Ã© administrativo, uma recepcionista faz sem perguntar. O sintoma Ã© clÃ­nico: o agente nÃ£o comenta, e encaminha para a equipe se a regra da clÃ­nica mandar." data-k="b">verificar si hay disponibilidad antes y ofrecer el horario, sin comentar el sÃ­ntoma</button>
-<button class="opt" data-fb="Perto. A mensagem tem uma parte administrativa (adiantar) que o agente pode tratar. Passar tudo para a enfermagem desperdiÃ§a a recepÃ§Ã£o digital." data-k="c">reenviar el mensaje completo al personal de enfermerÃ­a</button>
+<p class="qk">Ponte a prueba</p><p class="q">Un paciente envêÂ­a un mensaje: "me duele la cabeza, êÂ¿puedo adelantar la consulta?". êÂ¿QuêÂ© parte de eso puede gestionar un agente de la clêÂ­nica?</p>
+<button class="opt" data-fb="NêÂ£o. Responder sobre a dor, mesmo que 'tome êÂ¡gua e descanse', êÂ© orientaêÂ§êÂ£o sobre sintoma: clêÂ­nico. Fica fora do agente sem exceêÂ§êÂ£o." data-k="a">responder que el dolor de cabeza no es una urgencia y mantener el horario</button>
+<button class="opt" data-fb="Isso. Verificar vaga e oferecer horêÂ¡rio êÂ© administrativo, uma recepcionista faz sem perguntar. O sintoma êÂ© clêÂ­nico: o agente nêÂ£o comenta, e encaminha para a equipe se a regra da clêÂ­nica mandar." data-k="b">verificar si hay disponibilidad antes y ofrecer el horario, sin comentar el sêÂ­ntoma</button>
+<button class="opt" data-fb="Perto. A mensagem tem uma parte administrativa (adiantar) que o agente pode tratar. Passar tudo para a enfermagem desperdiêÂ§a a recepêÂ§êÂ£o digital." data-k="c">reenviar el mensaje completo al personal de enfermerêÂ­a</button>
 <p class="qfb"></p>
 </div>
 <div class="mobfig" data-mobfig="1"></div>
-<button class="readbtn" data-read="s1">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s1">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="2" data-kind="fundamento">
-<h2><span class="n">02</span> Los diez procesos administrativos de casi toda clÃ­nica</h2>
-<p>El curso base pide diez procesos crÃ­ticos en lugar de decenas de chatbots. En una clÃ­nica o consultorio, suelen ser estos diez: <b>agenda y confirmaciÃ³n</b> de consultas; <b>lista de espera</b> y espacios disponibles; <b>glosas</b> de convenio (las autorizaciones que el convenio devuelve sin pagar); <b>facturaciÃ³n</b> a la aseguradora; <b>cobro</b> de pacientes particulares y planes de tratamiento; <b>documentos administrativos</b> (constancia de asistencia, declaraciÃ³n, recibo); <b>onboarding</b> de paciente nuevo (registro, consentimiento, indicaciones para llegar); <b>inventario</b> de insumos; <b>derivaciÃ³n</b> a los profesionales; y <b>encuesta de satisfacciÃ³n</b> posconsulta.</p>
-<p>Observa que ninguno de los diez requiere formaciÃ³n en salud y que hoy todos consumen el tiempo de personas que tambiÃ©n atienden a pacientes en el mostrador. Elige el primero con el criterio del curso base: algo que se repite todos los dÃ­as, involucra a mÃ¡s de una persona y, cuando falla, cuesta dinero o pacientes. En la mayorÃ­a de las clÃ­nicas, eso apunta a las confirmaciones o a las objeciones.</p>
-<!-- ex-prof --><p>PatrÃ­cia, gerente de un consultorio odontolÃ³gico con tres dentistas, pensÃ³ que su problema era otro: planes de tratamiento presentados y nunca aceptados. Es el proceso cinco de la lista: seguimiento de planes. Cuarenta planes por mes, doce aceptados, y nadie tenÃ­a tiempo de retomar el contacto con los otros 28. Un agente que hace el seguimiento con un mensaje estÃ¡ndar y agenda una conversaciÃ³n con la dentista es administrativo de principio a fin.</p>
+<h2><span class="n">02</span> Los diez procesos administrativos de casi toda clêÂ­nica</h2>
+<p>El curso base pide diez procesos crêÂ­ticos en lugar de decenas de chatbots. En una clêÂ­nica o consultorio, suelen ser estos diez: <b>agenda y confirmaciêÂ³n</b> de consultas; <b>lista de espera</b> y espacios disponibles; <b>glosas</b> de convenio (las autorizaciones que el convenio devuelve sin pagar); <b>facturaciêÂ³n</b> a la aseguradora; <b>cobro</b> de pacientes particulares y planes de tratamiento; <b>documentos administrativos</b> (constancia de asistencia, declaraciêÂ³n, recibo); <b>onboarding</b> de paciente nuevo (registro, consentimiento, indicaciones para llegar); <b>inventario</b> de insumos; <b>derivaciêÂ³n</b> a los profesionales; y <b>encuesta de satisfacciêÂ³n</b> posconsulta.</p>
+<p>Observa que ninguno de los diez requiere formaciêÂ³n en salud y que hoy todos consumen el tiempo de personas que tambiêÂ©n atienden a pacientes en el mostrador. Elige el primero con el criterio del curso base: algo que se repite todos los dêÂ­as, involucra a mêÂ¡s de una persona y, cuando falla, cuesta dinero o pacientes. En la mayorêÂ­a de las clêÂ­nicas, eso apunta a las confirmaciones o a las objeciones.</p>
+<!-- ex-prof --><p>PatrêÂ­cia, gerente de un consultorio odontolêÂ³gico con tres dentistas, pensêÂ³ que su problema era otro: planes de tratamiento presentados y nunca aceptados. Es el proceso cinco de la lista: seguimiento de planes. Cuarenta planes por mes, doce aceptados, y nadie tenêÂ­a tiempo de retomar el contacto con los otros 28. Un agente que hace el seguimiento con un mensaje estêÂ¡ndar y agenda una conversaciêÂ³n con la dentista es administrativo de principio a fin.</p>
 <div class="qbefore-after">
-<div class="qba-col qba-before"><p class="qba-lbl">Antes</p><p class="qba-txt">Dos recepcionistas pasan la tarde llamando para confirmar las consultas de los 90 pacientes del dÃ­a siguiente. Un tercio no contesta. La recepciÃ³n se queda sin nadie en varios momentos y la tasa de ausencias es del 18%.</p></div>
-<div class="qba-col qba-depois"><p class="qba-lbl">DespuÃ©s</p><p class="qba-txt">El agente envÃ­a el mensaje estÃ¡ndar a las 17 h, lee las respuestas, registra el estado en la agenda y a las 8 h entrega la lista: confirmados, sin respuesta, cancelados. RecepciÃ³n llama solo a las 15 personas que no respondieron.</p></div>
-<div class="qba-saldo"><b>Saldo:</b> de 90 llamadas a 15, el mostrador siempre ocupado y la tasa de ausencias bajÃ³ al 9% en dos meses, porque quien cancela avisa con tiempo y el turno queda disponible para la lista de espera.</div>
+<div class="qba-col qba-before"><p class="qba-lbl">Antes</p><p class="qba-txt">Dos recepcionistas pasan la tarde llamando para confirmar las consultas de los 90 pacientes del dêÂ­a siguiente. Un tercio no contesta. La recepciêÂ³n se queda sin nadie en varios momentos y la tasa de ausencias es del 18%.</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">DespuêÂ©s</p><p class="qba-txt">El agente envêÂ­a el mensaje estêÂ¡ndar a las 17 h, lee las respuestas, registra el estado en la agenda y a las 8 h entrega la lista: confirmados, sin respuesta, cancelados. RecepciêÂ³n llama solo a las 15 personas que no respondieron.</p></div>
+<div class="qba-saldo"><b>Saldo:</b> de 90 llamadas a 15, el mostrador siempre ocupado y la tasa de ausencias bajêÂ³ al 9% en dos meses, porque quien cancela avisa con tiempo y el turno queda disponible para la lista de espera.</div>
 </div>
 <div class="mobfig" data-mobfig="2"></div>
-<button class="readbtn" data-read="s2">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s2">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="3" data-kind="fundamento">
-<h2><span class="n">03</span> ConfirmaciÃ³n de consultas en seis eslabones</h2>
-<p>Aplicando el mapa del curso base al proceso mÃ¡s habitual. <b>Entrada</b>: a las 17h, la agenda del dÃ­a siguiente sale del sistema de la clÃ­nica. <b>Decisiones de reglas</b>: Â¿el paciente no respondiÃ³ hasta las 20 h? Segundo mensaje. Â¿Es menor de edad? Mensaje solo al responsable registrado. <b>DecisiÃ³n de criterio</b>: Â¿liberar para la lista de espera el cupo de quien no confirmÃ³? Queda a cargo de la gerente, porque depende de conocer al paciente. <b>AcciÃ³n</b>: enviar el texto estÃ¡ndar y registrar el estado.</p>
-<p><b>VerificaciÃ³n</b>: el nombre, la fecha, el horario y el profesional coinciden con la agenda, y el mensaje no contiene nada mÃ¡s que el texto estÃ¡ndar. <b>ExcepciÃ³n</b>: el paciente responde con una pregunta (Â«Â¿puedo reprogramar?Â», Â«Â¿tengo que llevar estudios?Â»). El agente no responde; deriva el mensaje a recepciÃ³n. <b>Resultado</b>: a las 8h, la gestora conoce el estado de cada consulta del dÃ­a. FÃ­jate en lo que quedÃ³ fuera: el motivo de la consulta nunca aparece en el mensaje, y el agente nunca responde preguntas que no sean sobre la agenda.</p>
-<!-- ex-prof --><p>En la clÃ­nica de Renata, la excepciÃ³n mÃ¡s frecuente era la pregunta Â«Â¿tengo que venir en ayunas?Â». Es una clÃ­nica: depende del examen. La regla escrita quedÃ³ asÃ­: cualquier mensaje con una pregunta que no sea sobre el horario se envÃ­a a recepciÃ³n, donde deciden si responden o lo pasan a enfermerÃ­a. El agente nunca llega a leer el contenido; solo identifica que hay una pregunta.</p>
+<h2><span class="n">03</span> ConfirmaciêÂ³n de consultas en seis eslabones</h2>
+<p>Aplicando el mapa del curso base al proceso mêÂ¡s habitual. <b>Entrada</b>: a las 17h, la agenda del dêÂ­a siguiente sale del sistema de la clêÂ­nica. <b>Decisiones de reglas</b>: êÂ¿el paciente no respondiêÂ³ hasta las 20 h? Segundo mensaje. êÂ¿Es menor de edad? Mensaje solo al responsable registrado. <b>DecisiêÂ³n de criterio</b>: êÂ¿liberar para la lista de espera el cupo de quien no confirmêÂ³? Queda a cargo de la gerente, porque depende de conocer al paciente. <b>AcciêÂ³n</b>: enviar el texto estêÂ¡ndar y registrar el estado.</p>
+<p><b>VerificaciêÂ³n</b>: el nombre, la fecha, el horario y el profesional coinciden con la agenda, y el mensaje no contiene nada mêÂ¡s que el texto estêÂ¡ndar. <b>ExcepciêÂ³n</b>: el paciente responde con una pregunta (êÂ«êÂ¿puedo reprogramar?êÂ», êÂ«êÂ¿tengo que llevar estudios?êÂ»). El agente no responde; deriva el mensaje a recepciêÂ³n. <b>Resultado</b>: a las 8h, la gestora conoce el estado de cada consulta del dêÂ­a. FêÂ­jate en lo que quedêÂ³ fuera: el motivo de la consulta nunca aparece en el mensaje, y el agente nunca responde preguntas que no sean sobre la agenda.</p>
+<!-- ex-prof --><p>En la clêÂ­nica de Renata, la excepciêÂ³n mêÂ¡s frecuente era la pregunta êÂ«êÂ¿tengo que venir en ayunas?êÂ». Es una clêÂ­nica: depende del examen. La regla escrita quedêÂ³ asêÂ­: cualquier mensaje con una pregunta que no sea sobre el horario se envêÂ­a a recepciêÂ³n, donde deciden si responden o lo pasan a enfermerêÂ­a. El agente nunca llega a leer el contenido; solo identifica que hay una pregunta.</p>
 <div class="mobfig" data-mobfig="3"></div>
-<button class="readbtn" data-read="s3">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s3">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="4" data-kind="fundamento">
 <h2><span class="n">04</span> Glosas de convenios: el proceso que nadie quiere y que todo agente adora</h2>
-<p><span class="gterm" data-def="Guia de atendimento que o convÃªnio devolve sem pagar, total ou parcialmente, alegando erro de cÃ³digo, falta de autorizaÃ§Ã£o ou divergÃªncia de valor." tabindex="0">Glosa</span> es la solicitud que el convenio devuelve sin pagar. El motivo mÃ¡s comÃºn es que el cÃ³digo del procedimiento no coincide con la tabla del convenio, y el recurso es un texto estÃ¡ndar que menciona la solicitud, el cÃ³digo correcto y el valor. Es un trabajo repetitivo, tedioso, con reglas claras y un plazo corto; es decir, el proceso ideal para un agente. <b>Entrada</b>: el informe semanal del convenio. <b>DecisiÃ³n de regla</b>: Â¿objeciÃ³n por cÃ³digo? Preparar una apelaciÃ³n. Â¿Por falta de autorizaciÃ³n previa? Derivarla a la gerente.</p>
-<p><b>AcciÃ³n</b>: comparar el formulario con la tabla del convenio y redactar la apelaciÃ³n con el modelo. <b>VerificaciÃ³n</b>: el formulario, el cÃ³digo y el valor coinciden. <b>ExcepciÃ³n</b>: una objeciÃ³n de mÃ¡s de 2 mil reales o repetida para el mismo paciente, que puede indicar un problema en el registro, se deriva a la gerente. <b>Resultado</b>: las apelaciones listas para que la gerente las revise y firme. El agente nunca las envÃ­a al convenio: enviarlas es una acciÃ³n externa y ella es quien las firma.</p>
-<!-- ex-prof --><p>En el consultorio odontolÃ³gico, PatrÃ­cia tiene objeciones por otro motivo: se cobrÃ³ una radiografÃ­a sin adjuntar el informe. TambiÃ©n hay una regla: Â¿objeciÃ³n por falta de documentaciÃ³n? Adjuntar el documento del registro administrativo y apelar. Pero el informe contiene datos de salud. La soluciÃ³n fue que el agente indicara quÃ© autorizaciones necesitan un informe y que la asistente lo adjuntara. El agente prepara; la persona maneja el dato sensible.</p>
-<div class="qanchor"><p>El agente de la clÃ­nica nunca sabe por quÃ© vino el paciente. Sabe cuÃ¡ndo viene, con quiÃ©n y si confirmÃ³.</p></div>
+<p><span class="gterm" data-def="Guia de atendimento que o convêÂªnio devolve sem pagar, total ou parcialmente, alegando erro de cêÂ³digo, falta de autorizaêÂ§êÂ£o ou divergêÂªncia de valor." tabindex="0">Glosa</span> es la solicitud que el convenio devuelve sin pagar. El motivo mêÂ¡s comêÂºn es que el cêÂ³digo del procedimiento no coincide con la tabla del convenio, y el recurso es un texto estêÂ¡ndar que menciona la solicitud, el cêÂ³digo correcto y el valor. Es un trabajo repetitivo, tedioso, con reglas claras y un plazo corto; es decir, el proceso ideal para un agente. <b>Entrada</b>: el informe semanal del convenio. <b>DecisiêÂ³n de regla</b>: êÂ¿objeciêÂ³n por cêÂ³digo? Preparar una apelaciêÂ³n. êÂ¿Por falta de autorizaciêÂ³n previa? Derivarla a la gerente.</p>
+<p><b>AcciêÂ³n</b>: comparar el formulario con la tabla del convenio y redactar la apelaciêÂ³n con el modelo. <b>VerificaciêÂ³n</b>: el formulario, el cêÂ³digo y el valor coinciden. <b>ExcepciêÂ³n</b>: una objeciêÂ³n de mêÂ¡s de 2 mil reales o repetida para el mismo paciente, que puede indicar un problema en el registro, se deriva a la gerente. <b>Resultado</b>: las apelaciones listas para que la gerente las revise y firme. El agente nunca las envêÂ­a al convenio: enviarlas es una acciêÂ³n externa y ella es quien las firma.</p>
+<!-- ex-prof --><p>En el consultorio odontolêÂ³gico, PatrêÂ­cia tiene objeciones por otro motivo: se cobrêÂ³ una radiografêÂ­a sin adjuntar el informe. TambiêÂ©n hay una regla: êÂ¿objeciêÂ³n por falta de documentaciêÂ³n? Adjuntar el documento del registro administrativo y apelar. Pero el informe contiene datos de salud. La soluciêÂ³n fue que el agente indicara quêÂ© autorizaciones necesitan un informe y que la asistente lo adjuntara. El agente prepara; la persona maneja el dato sensible.</p>
+<div class="qanchor"><p>El agente de la clêÂ­nica nunca sabe por quêÂ© vino el paciente. Sabe cuêÂ¡ndo viene, con quiêÂ©n y si confirmêÂ³.</p></div>
 <div class="mobfig" data-mobfig="4"></div>
-<button class="readbtn" data-read="s4">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s4">marcar como leêÂ­do</button>
 </section>
 <section class="practice" data-mode="tarefa" data-practice="p1">
 <p class="pk">Practica ahora <span class="pcount">0/4 completado</span></p>
-<h3 class="ph">Elige el proceso de tu clÃ­nica y traza el lÃ­mite</h3>
-<p class="pgoal">En unos 12 minutos, enumera los diez procesos administrativos de tu clÃ­nica, elige uno y descrÃ­belo en seis eslabones, indicando explÃ­citamente dÃ³nde pasa el lÃ­mite clÃ­nico.</p>
-<p class="psafe">Es un papel o una hoja de cÃ¡lculo tuya, sin ningÃºn nombre de paciente: escribes procesos, no casos. Nada cambia en la clÃ­nica. Si un proceso parece administrativo y clÃ­nico al mismo tiempo, escribe ambos lados y sigue: separar es justamente el ejercicio.</p>
+<h3 class="ph">Elige el proceso de tu clêÂ­nica y traza el lêÂ­mite</h3>
+<p class="pgoal">En unos 12 minutos, enumera los diez procesos administrativos de tu clêÂ­nica, elige uno y descrêÂ­belo en seis eslabones, indicando explêÂ­citamente dêÂ³nde pasa el lêÂ­mite clêÂ­nico.</p>
+<p class="psafe">Es un papel o una hoja de cêÂ¡lculo tuya, sin ningêÂºn nombre de paciente: escribes procesos, no casos. Nada cambia en la clêÂ­nica. Si un proceso parece administrativo y clêÂ­nico al mismo tiempo, escribe ambos lados y sigue: separar es justamente el ejercicio.</p>
 <ol class="psteps">
-<li><label><input data-ptask="1" type="checkbox"/> Copia la lista de los diez procesos del paso 02 y ajÃºstala a tu clÃ­nica: tacha lo que no existe, agrega lo que falta (p. ej., programaciÃ³n de exÃ¡menes, control de consultas de seguimiento). Al lado de cada uno, indica quiÃ©n lo hace hoy y cuÃ¡nto tiempo le dedica por dÃ­a.</label></li>
-<li><label><input data-ptask="2" type="checkbox"/> Para cada proceso, aplica la prueba: Â¿una recepcionista bien capacitada lo harÃ­a sin consultar a un profesional de la salud? Marca A (administrativo) o C (clÃ­nico). Si alguno quedÃ³ como C, sale de la lista del agente.</label></li>
-<li><label><input data-ptask="3" type="checkbox"/> Elige el proceso A con este criterio: se repite todos los dÃ­as, involucra a mÃ¡s de una persona o un error cuesta dinero o afecta a un paciente. Escribe su resultado en una frase que diga quÃ© pasa a saber o tener la administradora.</label></li>
-<li><label><input data-ptask="4" type="checkbox"/> Mapea los seis eslabones (entrada, decisiones con R o J, acciones con verificaciÃ³n, excepciones con quiÃ©n decide, resultado). EstarÃ¡ listo cuando al menos una excepciÃ³n sea Â«el paciente hace una pregunta que no es sobre la agenda â†’ una persona decideÂ» y ninguna acciÃ³n toque el motivo de consulta, los exÃ¡menes ni la historia clÃ­nica.</label></li>
+<li><label><input data-ptask="1" type="checkbox"/> Copia la lista de los diez procesos del paso 02 y ajêÂºstala a tu clêÂ­nica: tacha lo que no existe, agrega lo que falta (p. ej., programaciêÂ³n de exêÂ¡menes, control de consultas de seguimiento). Al lado de cada uno, indica quiêÂ©n lo hace hoy y cuêÂ¡nto tiempo le dedica por dêÂ­a.</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Para cada proceso, aplica la prueba: êÂ¿una recepcionista bien capacitada lo harêÂ­a sin consultar a un profesional de la salud? Marca A (administrativo) o C (clêÂ­nico). Si alguno quedêÂ³ como C, sale de la lista del agente.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Elige el proceso A con este criterio: se repite todos los dêÂ­as, involucra a mêÂ¡s de una persona o un error cuesta dinero o afecta a un paciente. Escribe su resultado en una frase que diga quêÂ© pasa a saber o tener la administradora.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Mapea los seis eslabones (entrada, decisiones con R o J, acciones con verificaciêÂ³n, excepciones con quiêÂ©n decide, resultado). EstarêÂ¡ listo cuando al menos una excepciêÂ³n sea êÂ«el paciente hace una pregunta que no es sobre la agenda ê¢â â una persona decideêÂ» y ninguna acciêÂ³n toque el motivo de consulta, los exêÂ¡menes ni la historia clêÂ­nica.</label></li>
 </ol>
-<p class="pdone">Acabas de hacer lo que frena a la mayorÃ­a de las clÃ­nicas: separar con criterio lo que puede ejecutar un agente de lo que solo toca el equipo de salud. Ese mapa se incluye en el kit en la clase 3.</p>
+<p class="pdone">Acabas de hacer lo que frena a la mayorêÂ­a de las clêÂ­nicas: separar con criterio lo que puede ejecutar un agente de lo que solo toca el equipo de salud. Ese mapa se incluye en el kit en la clase 3.</p>
 </section>
 </div>
 <aside class="rail"><div class="railsticky">
 <div class="figstage">
-<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o teste da recepcionista. Toda tarefa entra por cima; se uma recepcionista treinada faz sem perguntar a um profissional de saÃºde, cai na caixa verde (administrativo, pode ir para o agente); se precisaria perguntar, sai pela lateral vermelha (clÃ­nico, fora do agente, sem exceÃ§Ã£o)." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o teste da recepcionista. Toda tarefa entra por cima; se uma recepcionista treinada faz sem perguntar a um profissional de saêÂºde, cai na caixa verde (administrativo, pode ir para o agente); se precisaria perguntar, sai pela lateral vermelha (clêÂ­nico, fora do agente, sem exceêÂ§êÂ£o)." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect height="22" rx="4" stroke="#948DA6" stroke-width="1.5" width="80" x="70" y="12"></rect><text fill="#ECE6D9" font-family="monospace" font-size="8.5" x="88" y="27">tarea</text>
 <path d="M110 34 v16" stroke="#948DA6" stroke-width="1.5"></path>
 <polygon fill="#221f2e" points="110,50 170,86 110,122 50,86" stroke="#7CE0C6" stroke-width="1.5"></polygon>
-<text fill="#ECE6D9" font-family="monospace" font-size="7" x="70" y="82">lo que hace la recepcionista</text><text fill="#ECE6D9" font-family="monospace" font-size="7" x="72" y="94">Â¿sin preguntar?</text>
-<path d="M110 122 v20" stroke="#7CE0C6" stroke-width="1.5"></path><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="116" y="136">sÃ­</text>
-<rect fill="#221f2e" height="30" rx="6" stroke="#7CE0C6" stroke-width="2" width="120" x="50" y="142"></rect><text fill="#7CE0C6" font-family="monospace" font-size="8" x="58" y="161">administrativo â†’ agente</text>
+<text fill="#ECE6D9" font-family="monospace" font-size="7" x="70" y="82">lo que hace la recepcionista</text><text fill="#ECE6D9" font-family="monospace" font-size="7" x="72" y="94">êÂ¿sin preguntar?</text>
+<path d="M110 122 v20" stroke="#7CE0C6" stroke-width="1.5"></path><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="116" y="136">sêÂ­</text>
+<rect fill="#221f2e" height="30" rx="6" stroke="#7CE0C6" stroke-width="2" width="120" x="50" y="142"></rect><text fill="#7CE0C6" font-family="monospace" font-size="8" x="58" y="161">administrativo ê¢â â agente</text>
 <path d="M170 86 h24" stroke="#E0736F" stroke-width="1.5"></path><text fill="#E0736F" font-family="monospace" font-size="7.5" x="172" y="80">no</text>
-<rect height="32" rx="4" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.5" width="22" x="194" y="70"></rect><text fill="#E0736F" font-family="monospace" font-size="7" x="197" y="90">clÃ­n.</text>
-<text fill="#6C6580" font-family="monospace" font-size="7.5" x="30" y="190">la misma lÃ­nea entre recepciÃ³n y consultorio</text>
+<rect height="32" rx="4" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.5" width="22" x="194" y="70"></rect><text fill="#E0736F" font-family="monospace" font-size="7" x="197" y="90">clêÂ­n.</text>
+<text fill="#6C6580" font-family="monospace" font-size="7.5" x="30" y="190">la misma lêÂ­nea entre recepciêÂ³n y consultorio</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; os dez processos administrativos como dez caixas em duas colunas. Nenhuma toca a faixa vermelha do consultÃ³rio. ConfirmaÃ§Ã£o e glosas (verde) sÃ£o onde a maioria das clÃ­nicas comeÃ§a: repetem todo dia e custam dinheiro quando falham." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; os dez processos administrativos como dez caixas em duas colunas. Nenhuma toca a faixa vermelha do consultêÂ³rio. ConfirmaêÂ§êÂ£o e glosas (verde) sêÂ£o onde a maioria das clêÂ­nicas comeêÂ§a: repetem todo dia e custam dinheiro quando falham." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <g fill="#ECE6D9" font-family="monospace" font-size="6.5">
-<rect fill="#7CE0C6" height="16" opacity=".85" rx="3" width="88" x="12" y="14"></rect><text fill="#0E0D14" x="16" y="25">confirmaciÃ³n</text>
+<rect fill="#7CE0C6" height="16" opacity=".85" rx="3" width="88" x="12" y="14"></rect><text fill="#0E0D14" x="16" y="25">confirmaciêÂ³n</text>
 <rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="12" y="34"></rect><text x="16" y="45">lista de espera</text>
 <rect fill="#7CE0C6" height="16" opacity=".85" rx="3" width="88" x="12" y="54"></rect><text fill="#0E0D14" x="16" y="65">glosas</text>
-<rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="12" y="74"></rect><text x="16" y="85">facturaciÃ³n</text>
+<rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="12" y="74"></rect><text x="16" y="85">facturaciêÂ³n</text>
 <rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="12" y="94"></rect><text x="16" y="105">cobros/planes</text>
 <rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="14"></rect><text x="112" y="25">documentos adm.</text>
 <rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="34"></rect><text x="112" y="45">onboarding</text>
 <rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="54"></rect><text x="112" y="65">inventario</text>
-<rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="74"></rect><text x="112" y="85">derivaciÃ³n</text>
-<rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="94"></rect><text x="112" y="105">satisfacciÃ³n</text>
+<rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="74"></rect><text x="112" y="85">derivaciêÂ³n</text>
+<rect height="16" rx="3" stroke="#948DA6" stroke-width="1" width="88" x="108" y="94"></rect><text x="112" y="105">satisfacciêÂ³n</text>
 </g>
 <rect fill="#E0736F" height="30" opacity=".18" rx="4" stroke="#E0736F" stroke-dasharray="4 3" stroke-width="1.2" width="184" x="12" y="130"></rect>
-<text fill="#E0736F" font-family="monospace" font-size="8" x="30" y="149">consultorio: diagnÃ³stico, conducta, examen</text>
-<text fill="#6C6580" font-family="monospace" font-size="7.5" x="12" y="184">verde = por dÃ³nde empezar; rojo = nunca</text>
+<text fill="#E0736F" font-family="monospace" font-size="8" x="30" y="149">consultorio: diagnêÂ³stico, conducta, examen</text>
+<text fill="#6C6580" font-family="monospace" font-size="7.5" x="12" y="184">verde = por dêÂ³nde empezar; rojo = nunca</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a confirmaÃ§Ã£o em seis elos. A agenda entra Ã s 17h; a mensagem padrÃ£o sai; a verificaÃ§Ã£o confere nome, data, horÃ¡rio e profissional; qualquer resposta com pergunta (Ã¢mbar) vai para a recepÃ§Ã£o; Ã s 8h o resultado Ã© a lista de status. O motivo da consulta (vermelho) nunca entra no fluxo." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a confirmaêÂ§êÂ£o em seis elos. A agenda entra êÂ s 17h; a mensagem padrêÂ£o sai; a verificaêÂ§êÂ£o confere nome, data, horêÂ¡rio e profissional; qualquer resposta com pergunta (êÂ¢mbar) vai para a recepêÂ§êÂ£o; êÂ s 8h o resultado êÂ© a lista de status. O motivo da consulta (vermelho) nunca entra no fluxo." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect height="20" rx="4" stroke="#948DA6" stroke-width="1.5" width="70" x="12" y="16"></rect><text fill="#ECE6D9" font-family="monospace" font-size="7.5" x="18" y="30">agenda 17h</text>
 <path d="M82 26 h14" stroke="#948DA6" stroke-width="1.2"></path>
 <rect height="20" rx="4" stroke="#948DA6" stroke-width="1.5" width="70" x="96" y="16"></rect><text fill="#ECE6D9" font-family="monospace" font-size="7.5" x="102" y="30">mensaje predeterminado</text>
@@ -235,22 +235,22 @@
 <rect fill="#221f2e" height="22" rx="5" stroke="#7CE0C6" stroke-width="1.5" width="102" x="80" y="152"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="86" y="167">8 h: lista de estados</text>
 <rect height="28" rx="4" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="66" x="12" y="60"></rect><text fill="#E0736F" font-family="monospace" font-size="6.5" x="16" y="72">motivo de la</text><text fill="#E0736F" font-family="monospace" font-size="6.5" x="16" y="82">consulta</text>
 <path d="M78 74 h10" stroke="#E0736F" stroke-width="1.2"></path><path d="M84 68 l8 12 M92 68 l-8 12" stroke="#E0736F" stroke-width="1.5"></path>
-<text fill="#6C6580" font-family="monospace" font-size="7.5" x="12" y="192">pregunta que no es sobre la agenda â†’ persona</text>
+<text fill="#6C6580" font-family="monospace" font-size="7.5" x="12" y="192">pregunta que no es sobre la agenda ê¢â â persona</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a glosa em seis elos. O demonstrativo do convÃªnio entra; por cÃ³digo divergente, o agente cruza com a tabela e escreve o recurso; por autorizaÃ§Ã£o prÃ©via, valor alto ou repetiÃ§Ã£o (Ã¢mbar), separa para a gestora. O recurso pronto espera a assinatura dela. Enviar ao convÃªnio nunca Ã© do agente." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a glosa em seis elos. O demonstrativo do convêÂªnio entra; por cêÂ³digo divergente, o agente cruza com a tabela e escreve o recurso; por autorizaêÂ§êÂ£o prêÂ©via, valor alto ou repetiêÂ§êÂ£o (êÂ¢mbar), separa para a gestora. O recurso pronto espera a assinatura dela. Enviar ao convêÂªnio nunca êÂ© do agente." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect height="20" rx="4" stroke="#948DA6" stroke-width="1.5" width="90" x="12" y="14"></rect><text fill="#ECE6D9" font-family="monospace" font-size="7" x="18" y="28">comprobante</text>
 <path d="M57 34 v14" stroke="#948DA6" stroke-width="1.2"></path>
-<polygon fill="#221f2e" points="57,48 100,70 57,92 14,70" stroke="#948DA6" stroke-width="1.2"></polygon><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="36" y="73">Â¿motivo?</text>
-<path d="M57 92 v16" stroke="#7CE0C6" stroke-width="1.2"></path><text fill="#7CE0C6" font-family="monospace" font-size="6.5" x="60" y="104">cÃ³digo</text>
+<polygon fill="#221f2e" points="57,48 100,70 57,92 14,70" stroke="#948DA6" stroke-width="1.2"></polygon><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="36" y="73">êÂ¿motivo?</text>
+<path d="M57 92 v16" stroke="#7CE0C6" stroke-width="1.2"></path><text fill="#7CE0C6" font-family="monospace" font-size="6.5" x="60" y="104">cêÂ³digo</text>
 <rect height="20" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="90" x="12" y="108"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="122">cruza con la tabla</text>
 <path d="M57 128 v12" stroke="#7CE0C6" stroke-width="1.2"></path>
 <rect height="20" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="90" x="12" y="140"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="154">redacta un recurso</text>
 <path d="M57 160 v12" stroke="#7CE0C6" stroke-width="1.2"></path>
 <rect fill="#221f2e" height="20" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="90" x="12" y="172"></rect><text fill="#7CE0C6" font-family="monospace" font-size="6.5" x="16" y="186">listo para firmar</text>
 <path d="M100 70 h24" stroke="#F2B45C" stroke-width="1.2"></path>
-<rect height="36" rx="4" stroke="#F2B45C" stroke-width="1.5" width="84" x="124" y="52"></rect><text fill="#F2B45C" font-family="monospace" font-size="6.5" x="130" y="66">autorizaciÃ³n Â·</text><text fill="#F2B45C" font-family="monospace" font-size="6.5" x="130" y="78">&gt; 2 mil Â· repetida</text>
+<rect height="36" rx="4" stroke="#F2B45C" stroke-width="1.5" width="84" x="124" y="52"></rect><text fill="#F2B45C" font-family="monospace" font-size="6.5" x="130" y="66">autorizaciêÂ³n êÂ·</text><text fill="#F2B45C" font-family="monospace" font-size="6.5" x="130" y="78">&gt; 2 mil êÂ· repetida</text>
 <path d="M166 88 v14" stroke="#F2B45C" stroke-width="1.2"></path><circle cx="166" cy="112" r="9" stroke="#F2B45C" stroke-width="1.5"></circle><text fill="#F2B45C" font-family="monospace" font-size="8" x="162" y="116">H</text>
-<rect height="22" rx="4" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="124" y="140"></rect><text fill="#E0736F" font-family="monospace" font-size="6.5" x="132" y="155">enviar al seguro mÃ©dico</text>
+<rect height="22" rx="4" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="124" y="140"></rect><text fill="#E0736F" font-family="monospace" font-size="6.5" x="132" y="155">enviar al seguro mêÂ©dico</text>
 <text fill="#6C6580" font-family="monospace" font-size="7" x="124" y="180">solo la gerente</text>
 </svg></div>
 </div>
@@ -263,58 +263,58 @@
 <div class="recap-autor">
 <p class="rak">Resumen</p>
 <ul>
-<li>El agente de la clÃ­nica realiza trabajo administrativo y nunca toca el trabajo clÃ­nico. La prueba: Â¿una recepcionista capacitada podrÃ­a hacerlo sin consultar a un profesional de la salud?</li>
-<li>Casi todas las clÃ­nicas tienen los mismos diez procesos administrativos. Las confirmaciones y las objeciones son el comienzo mÃ¡s comÃºn porque se repiten a diario y cuestan dinero cuando fallan.</li>
-<li>En la confirmaciÃ³n, el motivo de consulta nunca aparece en el mensaje, y toda pregunta que no sea sobre la agenda se deriva a una persona.</li>
-<li>Para la glosa, el agente compara con la tabla y prepara el recurso; los montos altos, los casos repetidos y la autorizaciÃ³n previa se derivan a la administradora, y ella es quien lo envÃ­a al convenio.</li>
+<li>El agente de la clêÂ­nica realiza trabajo administrativo y nunca toca el trabajo clêÂ­nico. La prueba: êÂ¿una recepcionista capacitada podrêÂ­a hacerlo sin consultar a un profesional de la salud?</li>
+<li>Casi todas las clêÂ­nicas tienen los mismos diez procesos administrativos. Las confirmaciones y las objeciones son el comienzo mêÂ¡s comêÂºn porque se repiten a diario y cuestan dinero cuando fallan.</li>
+<li>En la confirmaciêÂ³n, el motivo de consulta nunca aparece en el mensaje, y toda pregunta que no sea sobre la agenda se deriva a una persona.</li>
+<li>Para la glosa, el agente compara con la tabla y prepara el recurso; los montos altos, los casos repetidos y la autorizaciêÂ³n previa se derivan a la administradora, y ella es quien lo envêÂ­a al convenio.</li>
 </ul>
 </div>
 <div class="next-action">
-<p class="nak">Tu prÃ³ximo paso</p>
-<p class="na-win">Acabas de separar con criterio lo que puede ejecutar un agente en tu clÃ­nica de lo que solo toca el equipo de salud.</p>
-<p class="na-action">En los prÃ³ximos 15 minutos, muÃ©strale la lista de los diez procesos a la recepcionista con mÃ¡s experiencia y pregÃºntale: Â«Â¿cuÃ¡l de estos te lleva mÃ¡s tiempo en un dÃ­a normal?Â». Si la respuesta es distinta de lo que elegiste, anota ambos.</p>
-<p class="na-hook">En la prÃ³xima clase decidirÃ¡s quÃ© puede ver y hacer el agente en la clÃ­nica: historia clÃ­nica fuera de alcance, confidencialidad como restricciÃ³n fija y la matriz de permisos que una clÃ­nica puede firmar sin miedo.</p>
+<p class="nak">Tu prêÂ³ximo paso</p>
+<p class="na-win">Acabas de separar con criterio lo que puede ejecutar un agente en tu clêÂ­nica de lo que solo toca el equipo de salud.</p>
+<p class="na-action">En los prêÂ³ximos 15 minutos, muêÂ©strale la lista de los diez procesos a la recepcionista con mêÂ¡s experiencia y pregêÂºntale: êÂ«êÂ¿cuêÂ¡l de estos te lleva mêÂ¡s tiempo en un dêÂ­a normal?êÂ». Si la respuesta es distinta de lo que elegiste, anota ambos.</p>
+<p class="na-hook">En la prêÂ³xima clase decidirêÂ¡s quêÂ© puede ver y hacer el agente en la clêÂ­nica: historia clêÂ­nica fuera de alcance, confidencialidad como restricciêÂ³n fija y la matriz de permisos que una clêÂ­nica puede firmar sin miedo.</p>
 </div>
 </div>
-<nav class="lnav"><a href="#trilha">â† ruta</a><a href="#aula-2">siguiente: quÃ© puede ver y hacer el agente â†’</a></nav>
-<footer>Clase 1 Â· Agentes en la ClÃ­nica Â· ARCKHÉ AI PRO</footer>
+<nav class="lnav"><a href="#trilha">ê¢â Â ruta</a><a href="#aula-2">siguiente: quêÂ© puede ver y hacer el agente ê¢â â</a></nav>
+<footer>Clase 1 êÂ· Agentes en la ClêÂ­nica êÂ· ARCKHê AI PRO</footer>
 <script id="cards-1" type="application/json">
 [
-  {"front":"Um paciente escreve 'a receita venceu, pode renovar?'. Que parte disso o agente da clÃ­nica pode tratar, e o que ele faz com o resto?","back":"Nada da renovaÃ§Ã£o: Ã© clÃ­nico. O agente pode sÃ³ registrar que chegou uma dÃºvida fora do assunto agenda e encaminhar para a recepÃ§Ã£o, que passa ao profissional. Ele nÃ£o comenta nem promete."},
-  {"front":"Sua clÃ­nica quer comeÃ§ar pelo agente de pesquisa de satisfaÃ§Ã£o. Pelo critÃ©rio do caderno, que pergunta vocÃª faz antes de aceitar?","back":"Repete todo dia, envolve mais de uma pessoa e custa dinheiro ou paciente quando falha? SatisfaÃ§Ã£o raramente passa no terceiro; confirmaÃ§Ã£o e glosas costumam passar nos trÃªs. Comece pelo que passa."},
-  {"front":"Qual a diferenÃ§a entre a exceÃ§Ã£o 'paciente respondeu com pergunta' e a exceÃ§Ã£o 'glosa repetida no mesmo paciente' quanto a quem decide?","back":"A pergunta vai para a recepÃ§Ã£o, que decide se responde ou passa Ã  enfermagem. A glosa repetida vai para a gestora, porque pode indicar problema de cadastro ou de tabela, nÃ£o sÃ³ um erro isolado."},
-  {"front":"Uma glosa Ã© por radiografia sem laudo anexado. O laudo Ã© dado de saÃºde. Como o agente participa sem tocar no laudo?","back":"Ele lista quais guias precisam de laudo e prepara o texto do recurso; a assistente anexa o laudo. O agente prepara, a pessoa toca no dado sensÃ­vel."},
-  {"front":"Por que a mensagem de confirmaÃ§Ã£o nunca cita o motivo da consulta, mesmo que isso ajudasse o paciente a lembrar?","back":"Porque motivo de consulta Ã© dado de saÃºde, e a mensagem sai da clÃ­nica por um canal externo. Nome, data, horÃ¡rio e profissional bastam para confirmar; o resto Ã© risco sem ganho."}
+  {"front":"Um paciente escreve 'a receita venceu, pode renovar?'. Que parte disso o agente da clêÂ­nica pode tratar, e o que ele faz com o resto?","back":"Nada da renovaêÂ§êÂ£o: êÂ© clêÂ­nico. O agente pode sêÂ³ registrar que chegou uma dêÂºvida fora do assunto agenda e encaminhar para a recepêÂ§êÂ£o, que passa ao profissional. Ele nêÂ£o comenta nem promete."},
+  {"front":"Sua clêÂ­nica quer comeêÂ§ar pelo agente de pesquisa de satisfaêÂ§êÂ£o. Pelo critêÂ©rio do caderno, que pergunta vocêÂª faz antes de aceitar?","back":"Repete todo dia, envolve mais de uma pessoa e custa dinheiro ou paciente quando falha? SatisfaêÂ§êÂ£o raramente passa no terceiro; confirmaêÂ§êÂ£o e glosas costumam passar nos trêÂªs. Comece pelo que passa."},
+  {"front":"Qual a diferenêÂ§a entre a exceêÂ§êÂ£o 'paciente respondeu com pergunta' e a exceêÂ§êÂ£o 'glosa repetida no mesmo paciente' quanto a quem decide?","back":"A pergunta vai para a recepêÂ§êÂ£o, que decide se responde ou passa êÂ  enfermagem. A glosa repetida vai para a gestora, porque pode indicar problema de cadastro ou de tabela, nêÂ£o sêÂ³ um erro isolado."},
+  {"front":"Uma glosa êÂ© por radiografia sem laudo anexado. O laudo êÂ© dado de saêÂºde. Como o agente participa sem tocar no laudo?","back":"Ele lista quais guias precisam de laudo e prepara o texto do recurso; a assistente anexa o laudo. O agente prepara, a pessoa toca no dado sensêÂ­vel."},
+  {"front":"Por que a mensagem de confirmaêÂ§êÂ£o nunca cita o motivo da consulta, mesmo que isso ajudasse o paciente a lembrar?","back":"Porque motivo de consulta êÂ© dado de saêÂºde, e a mensagem sai da clêÂ­nica por um canal externo. Nome, data, horêÂ¡rio e profissional bastam para confirmar; o resto êÂ© risco sem ganho."}
 ]
 </script>
 <!-- COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=4
   [OK] promise            .promise no cold-open (1)
-  [OK] why                .why apÃ³s a promessa (1)
+  [OK] why                .why apêÂ³s a promessa (1)
   [OK] tempo              data-tempo="21min" no view + render no cold-open (1)
-  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Renata gestora clÃ­nica mÃ©dica, PatrÃ­cia consultÃ³rio odontolÃ³gico, Renata, PatrÃ­cia)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Renata gestora clêÂ­nica mêÂ©dica, PatrêÂ­cia consultêÂ³rio odontolêÂ³gico, Renata, PatrêÂ­cia)
   [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4, data-fig 1..4)
   [OK] practice           .practice[data-mode="tarefa"] (exatamente 1)
-  [OK] psafe              .psafe dentro da prÃ¡tica (1)
+  [OK] psafe              .psafe dentro da prêÂ¡tica (1)
   [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min) (1)
   [OK] recap-autor        .recap-autor no fecho (1)
   [OK] next-action        .next-action no fecho (1)
-  [OK] cards              <script id="cards-1"> presente (5 cartÃµes: aplicaÃ§Ã£o, decisÃ£o, contraste, aplicaÃ§Ã£o, pergunta)
-  [OK] anti-duplicacao    Â§11.3 â€” 3 testes passam (substring / forma / operaÃ§Ã£o)
+  [OK] cards              <script id="cards-1"> presente (5 cartêÂµes: aplicaêÂ§êÂ£o, decisêÂ£o, contraste, aplicaêÂ§êÂ£o, pergunta)
+  [OK] anti-duplicacao    êÂ§11.3 ê¢â¬â 3 testes passam (substring / forma / operaêÂ§êÂ£o)
   [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (1 quiz data-fb, step 01)
-  dosagem: quiz + cartÃµes + qbefore-after (step 02) + qanchor (step 04) = 4 obrigatÃ³rios (teto 5). densidade: 2 quadros em 4 steps, nÃ£o adjacentes. jargÃ£o de domÃ­nio: glosa (.gterm).
+  dosagem: quiz + cartêÂµes + qbefore-after (step 02) + qanchor (step 04) = 4 obrigatêÂ³rios (teto 5). densidade: 2 quadros em 4 steps, nêÂ£o adjacentes. jargêÂ£o de domêÂ­nio: glosa (.gterm).
 -->
 </section>
-<!-- ===== AULA 2 Â· FERRAMENTA ===== -->
+<!-- ===== AULA 2 êÂ· FERRAMENTA ===== -->
 <section class="view" data-aula="2" data-tempo="21min" id="v-aula-2">
 <header class="hero"><div class="hero-inner">
 <div>
-<p class="kicker">Cuaderno de Salud Â· Clase 2</p>
-<h1>Lo que el agente puede<br/><em>ver y hacer en una clÃ­nica</em></h1>
-<p class="promise">Al terminar esta clase podrÃ¡s decidir la matriz de permisos de un agente de clÃ­nica, con las historias clÃ­nicas y los datos de salud fuera de su alcance, la confidencialidad y la LGPD por escrito como restricciones, y un responsable con nombre para cada permiso.</p>
-<p class="why">La clÃ­nica es el lugar donde la gobernanza de agentes deja de ser una buena prÃ¡ctica y se vuelve una obligaciÃ³n. Un registro tiene nombre, documento, seguro mÃ©dico y telÃ©fono; la historia clÃ­nica contiene el resto de la vida de la persona. La LGPD considera sensibles los datos de salud y les aplica reglas mÃ¡s estrictas, y el Consejo de Medicina considera la confidencialidad un deber del profesional, no de la tecnologÃ­a. La buena noticia: el agente administrativo no necesita nada de eso para trabajar. Esta clase muestra dÃ³nde trazar el lÃ­mite y cÃ³mo escribirlo en una matriz que el dueÃ±o de la clÃ­nica pueda firmar sin miedo.</p>
-<p class="cue"><span class="arw">â†“</span> rol para estudiar</p>
+<p class="kicker">Cuaderno de Salud êÂ· Clase 2</p>
+<h1>Lo que el agente puede<br/><em>ver y hacer en una clêÂ­nica</em></h1>
+<p class="promise">Al terminar esta clase podrêÂ¡s decidir la matriz de permisos de un agente de clêÂ­nica, con las historias clêÂ­nicas y los datos de salud fuera de su alcance, la confidencialidad y la LGPD por escrito como restricciones, y un responsable con nombre para cada permiso.</p>
+<p class="why">La clêÂ­nica es el lugar donde la gobernanza de agentes deja de ser una buena prêÂ¡ctica y se vuelve una obligaciêÂ³n. Un registro tiene nombre, documento, seguro mêÂ©dico y telêÂ©fono; la historia clêÂ­nica contiene el resto de la vida de la persona. La LGPD considera sensibles los datos de salud y les aplica reglas mêÂ¡s estrictas, y el Consejo de Medicina considera la confidencialidad un deber del profesional, no de la tecnologêÂ­a. La buena noticia: el agente administrativo no necesita nada de eso para trabajar. Esta clase muestra dêÂ³nde trazar el lêÂ­mite y cêÂ³mo escribirlo en una matriz que el dueêÂ±o de la clêÂ­nica pueda firmar sin miedo.</p>
+<p class="cue"><span class="arw">ê¢â â</span> rol para estudiar</p>
 </div>
-<!-- herofig Â· METÃFORA-DO-MUNDO-REAL: arquivo de prontuÃ¡rios trancado com chave, ao lado de um quadro de agenda aberto -->
+<!-- herofig êÂ· METêÂFORA-DO-MUNDO-REAL: arquivo de prontuêÂ¡rios trancado com chave, ao lado de um quadro de agenda aberto -->
 <div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
 <rect fill="#1a1824" height="170" rx="6" stroke="#948DA6" stroke-width="2" width="110" x="30" y="40"></rect>
 <rect height="34" rx="3" stroke="#948DA6" stroke-width="2" width="86" x="42" y="54"></rect><rect height="34" rx="3" stroke="#948DA6" stroke-width="2" width="86" x="42" y="98"></rect><rect height="34" rx="3" stroke="#948DA6" stroke-width="2" width="86" x="42" y="142"></rect>
@@ -324,113 +324,113 @@
 <path d="M172 60 h96 M172 84 h96 M172 108 h96 M172 132 h96 M172 156 h96" opacity=".3" stroke="#0E0D14" stroke-width="1.5"></path>
 <rect fill="#7CE0C6" height="12" rx="2" width="60" x="176" y="66"></rect><rect fill="#7CE0C6" height="12" rx="2" width="80" x="176" y="90"></rect><rect fill="#F2B45C" height="12" rx="2" width="46" x="176" y="114"></rect><rect fill="#7CE0C6" height="12" rx="2" width="70" x="176" y="138"></rect>
 <path d="M150 30 v190" stroke="#F2B45C" stroke-dasharray="6 5" stroke-width="2"></path>
-<text fill="#E0736F" font-family="monospace" font-size="9" x="40" y="30">historial clÃ­nico</text>
+<text fill="#E0736F" font-family="monospace" font-size="9" x="40" y="30">historial clêÂ­nico</text>
 <text fill="#7CE0C6" font-family="monospace" font-size="9" x="196" y="30">agenda</text>
 </svg></div>
 </div></header>
 <div class="layout">
 <div class="col">
 <section class="step" data-fig="1" data-kind="fundamento">
-<h2><span class="n">01</span> El registro, la agenda y la facturaciÃ³n van por un lado; la historia clÃ­nica, por otro</h2>
-<p>Toda clÃ­nica guarda informaciÃ³n en dos categorÃ­as que suelen estar en el mismo sistema. Por un lado, el <b>administrativo</b>: registro (nombre, telÃ©fono, convenio, responsable), agenda (quiÃ©n, cuÃ¡ndo, con quiÃ©n), facturaciÃ³n (formularios, cÃ³digos, valores) y la tabla de cada convenio. Del otro lado, el <b>historial clÃ­nico</b>: motivo de la consulta, evoluciÃ³n, estudios, diagnÃ³stico, prescripciÃ³n. El agente administrativo trabaja solo con lo del primer lado.</p>
-<p>La LGPD considera que los datos de salud son <span class="gterm" data-def="Categoria da LGPD para dados que podem causar discriminaÃ§Ã£o ou dano grave se expostos: saÃºde, origem, religiÃ£o, vida sexual, biometria. Exigem base legal especÃ­fica e proteÃ§Ã£o reforÃ§ada." tabindex="0">dato sensible</span>, con reglas mÃ¡s estrictas que las del registro comÃºn. Esto simplifica la decisiÃ³n en vez de complicarla: el agente no accede a datos sensibles, punto. No es Â«con aprobaciÃ³nÂ» ni Â«solo para resumirÂ». Si el trabajo administrativo sale igual sin la historia clÃ­nica, y asÃ­ es, la historia clÃ­nica queda fuera de su alcance.</p>
-<!-- ex-prof --><p>Renata hizo el inventario de contexto del agente de confirmaciones y objeciones: agenda, registros con el responsable de los menores, texto estÃ¡ndar, detalle de la obra social, tabla de procedimientos. Cinco fuentes, ninguna de ellas es la historia clÃ­nica. Cuando el proveedor del sistema preguntÃ³ "Â¿quieres que el agente tambiÃ©n tenga acceso al mÃ³dulo clÃ­nico, ya que lo estamos integrando?", la respuesta fue no y quedÃ³ registrada.</p>
+<h2><span class="n">01</span> El registro, la agenda y la facturaciêÂ³n van por un lado; la historia clêÂ­nica, por otro</h2>
+<p>Toda clêÂ­nica guarda informaciêÂ³n en dos categorêÂ­as que suelen estar en el mismo sistema. Por un lado, el <b>administrativo</b>: registro (nombre, telêÂ©fono, convenio, responsable), agenda (quiêÂ©n, cuêÂ¡ndo, con quiêÂ©n), facturaciêÂ³n (formularios, cêÂ³digos, valores) y la tabla de cada convenio. Del otro lado, el <b>historial clêÂ­nico</b>: motivo de la consulta, evoluciêÂ³n, estudios, diagnêÂ³stico, prescripciêÂ³n. El agente administrativo trabaja solo con lo del primer lado.</p>
+<p>La LGPD considera que los datos de salud son <span class="gterm" data-def="Categoria da LGPD para dados que podem causar discriminaêÂ§êÂ£o ou dano grave se expostos: saêÂºde, origem, religiêÂ£o, vida sexual, biometria. Exigem base legal especêÂ­fica e proteêÂ§êÂ£o reforêÂ§ada." tabindex="0">dato sensible</span>, con reglas mêÂ¡s estrictas que las del registro comêÂºn. Esto simplifica la decisiêÂ³n en vez de complicarla: el agente no accede a datos sensibles, punto. No es êÂ«con aprobaciêÂ³nêÂ» ni êÂ«solo para resumirêÂ». Si el trabajo administrativo sale igual sin la historia clêÂ­nica, y asêÂ­ es, la historia clêÂ­nica queda fuera de su alcance.</p>
+<!-- ex-prof --><p>Renata hizo el inventario de contexto del agente de confirmaciones y objeciones: agenda, registros con el responsable de los menores, texto estêÂ¡ndar, detalle de la obra social, tabla de procedimientos. Cinco fuentes, ninguna de ellas es la historia clêÂ­nica. Cuando el proveedor del sistema preguntêÂ³ "êÂ¿quieres que el agente tambiêÂ©n tenga acceso al mêÂ³dulo clêÂ­nico, ya que lo estamos integrando?", la respuesta fue no y quedêÂ³ registrada.</p>
 <div class="mobfig" data-mobfig="1"></div>
-<button class="readbtn" data-read="s1">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s1">marcar como leêÂ­do</button>
 </section>
-<section class="step" data-fig="2" data-kind="ferramenta" data-versao="ChatGPT Â· Claude Â· Copilot, set/2026">
-<h2><span class="n">02</span> DÃ³nde funciona hoy y el error que una clÃ­nica no puede cometer</h2>
-<p>En septiembre de 2026, un agente de clÃ­nica funciona de tres formas, desde la provisional hasta la permanente. En <b>chat de IA con carpeta de proyecto</b> (ChatGPT, Claude, Copilot), guardas el texto estÃ¡ndar, la tabla del convenio y los modelos de apelaciÃ³n, y cada semana adjuntas el informe, sin nombres de pacientes. En la <b>plataforma de mensajerÃ­a de la clÃ­nica</b>, muchas ya ofrecen confirmaciÃ³n automÃ¡tica segÃºn una regla. Y en la <b>integraciÃ³n con el sistema de la clÃ­nica</b> por la puerta de servicio, el agente lee la agenda por su cuenta, configurada por quien se encarga del sistema, con un contrato que contemple los datos personales.</p>
-<p>La primera opciÃ³n sirve para aprender y para las glosas. Para las confirmaciones, que involucran los telÃ©fonos de los pacientes, prefiere la segunda o la tercera desde el principio: el chat de IA genÃ©rico es un servicio externo a la clÃ­nica, y un telÃ©fono asociado a un nombre es un dato personal. Esto parece burocrÃ¡tico, pero funciona como la regla de no dejar la lista de pacientes en la impresora: el punto es por dÃ³nde circula el dato, no la herramienta.</p>
-<!-- ex-prof --><p>PatrÃ­cia empezÃ³ por el camino uno para las objeciones de radiografÃ­as: una carpeta de proyecto con la tabla de la obra social y el modelo de apelaciÃ³n, el detalle adjunto por semana, solo el nÃºmero de autorizaciÃ³n y el cÃ³digo. Para retomar los planes de tratamiento, que implican el nombre y el telÃ©fono del paciente, esperÃ³ la integraciÃ³n con el sistema del consultorio, que ya tenÃ­a una API de servicio.</p>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="ChatGPT êÂ· Claude êÂ· Copilot, set/2026">
+<h2><span class="n">02</span> DêÂ³nde funciona hoy y el error que una clêÂ­nica no puede cometer</h2>
+<p>En septiembre de 2026, un agente de clêÂ­nica funciona de tres formas, desde la provisional hasta la permanente. En <b>chat de IA con carpeta de proyecto</b> (ChatGPT, Claude, Copilot), guardas el texto estêÂ¡ndar, la tabla del convenio y los modelos de apelaciêÂ³n, y cada semana adjuntas el informe, sin nombres de pacientes. En la <b>plataforma de mensajerêÂ­a de la clêÂ­nica</b>, muchas ya ofrecen confirmaciêÂ³n automêÂ¡tica segêÂºn una regla. Y en la <b>integraciêÂ³n con el sistema de la clêÂ­nica</b> por la puerta de servicio, el agente lee la agenda por su cuenta, configurada por quien se encarga del sistema, con un contrato que contemple los datos personales.</p>
+<p>La primera opciêÂ³n sirve para aprender y para las glosas. Para las confirmaciones, que involucran los telêÂ©fonos de los pacientes, prefiere la segunda o la tercera desde el principio: el chat de IA genêÂ©rico es un servicio externo a la clêÂ­nica, y un telêÂ©fono asociado a un nombre es un dato personal. Esto parece burocrêÂ¡tico, pero funciona como la regla de no dejar la lista de pacientes en la impresora: el punto es por dêÂ³nde circula el dato, no la herramienta.</p>
+<!-- ex-prof --><p>PatrêÂ­cia empezêÂ³ por el camino uno para las objeciones de radiografêÂ­as: una carpeta de proyecto con la tabla de la obra social y el modelo de apelaciêÂ³n, el detalle adjunto por semana, solo el nêÂºmero de autorizaciêÂ³n y el cêÂ³digo. Para retomar los planes de tratamiento, que implican el nombre y el telêÂ©fono del paciente, esperêÂ³ la integraciêÂ³n con el sistema del consultorio, que ya tenêÂ­a una API de servicio.</p>
 <div class="qerr">
-<p class="qk">Error comÃºn</p>
-<p class="qerr-txt"><b>Exportar la agenda del dÃ­a con la columna "motivo de la consulta" y pegarla en un chat de IA para "probar la confirmaciÃ³n".</b> Ocurre porque la exportaciÃ³n estÃ¡ndar del sistema incluye todas las columnas y nadie las elimina. El motivo de la consulta es un dato de salud que sale de la clÃ­nica hacia un servicio externo. Antes de cualquier prueba, exporta solo las cuatro columnas que usa la confirmaciÃ³n: nombre, fecha, horario, profesional. Y en las pruebas, cambia los nombres.</p>
+<p class="qk">Error comêÂºn</p>
+<p class="qerr-txt"><b>Exportar la agenda del dêÂ­a con la columna "motivo de la consulta" y pegarla en un chat de IA para "probar la confirmaciêÂ³n".</b> Ocurre porque la exportaciêÂ³n estêÂ¡ndar del sistema incluye todas las columnas y nadie las elimina. El motivo de la consulta es un dato de salud que sale de la clêÂ­nica hacia un servicio externo. Antes de cualquier prueba, exporta solo las cuatro columnas que usa la confirmaciêÂ³n: nombre, fecha, horario, profesional. Y en las pruebas, cambia los nombres.</p>
 </div>
 <div class="mobfig" data-mobfig="2"></div>
-<button class="readbtn" data-read="s2">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s2">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="3" data-kind="fundamento">
-<h2><span class="n">03</span> La matriz de permisos de una clÃ­nica tiene una escalera previsible</h2>
-<p>Aplicando las siete acciones del curso base al agente de confirmaciones y glosas: <b>leer</b> agenda, registro administrativo y estado de cuenta, sÃ­; historia clÃ­nica, nunca; <b>redactar</b> estado en la agenda y borrador del recurso, sÃ­; <b>cambiar</b> agenda (reprogramar, liberar un espacio), con aprobaciÃ³n de recepciÃ³n; <b>enviar</b> el mensaje estÃ¡ndar de confirmaciÃ³n, sÃ­, porque el texto es fijo y estÃ¡ aprobado; enviar cualquier otro texto o el recurso a la aseguradora, con aprobaciÃ³n; <b>comprar</b>, <b>borrar</b> e <b>aprobar</b>, no se puede.</p>
-<p>La Ãºnica lÃ­nea que se aparta de la escalera del curso base es "enviar la confirmaciÃ³n estÃ¡ndar: puede". Se justifica porque el texto no cambia, los cuatro campos estÃ¡n verificados y no se incluye nada mÃ¡s. Cualquier mensaje que necesite un texto nuevo vuelve a "con aprobaciÃ³n". Y cada permiso tiene un responsable con nombre: la gestora para leer y escribir, la coordinadora de recepciÃ³n para cambiar la agenda, el profesional para firmar el recurso y el certificado.</p>
-<!-- ex-prof --><p>En la clÃ­nica de Renata, la matriz tiene ocho filas y cabÃ­a en una hoja pegada en la oficina de la administradora. La fila que generÃ³ debate fue Â«liberar un turno para la lista de esperaÂ»: recepciÃ³n querÃ­a Â«puedeÂ», para agilizar. QuedÃ³ Â«con aprobaciÃ³nÂ» durante los dos primeros meses; despuÃ©s de superar la baterÃ­a de casos y mantener el registro limpio, pasÃ³ a Â«puedeÂ», con un lÃ­mite de dos turnos por dÃ­a.</p>
+<h2><span class="n">03</span> La matriz de permisos de una clêÂ­nica tiene una escalera previsible</h2>
+<p>Aplicando las siete acciones del curso base al agente de confirmaciones y glosas: <b>leer</b> agenda, registro administrativo y estado de cuenta, sêÂ­; historia clêÂ­nica, nunca; <b>redactar</b> estado en la agenda y borrador del recurso, sêÂ­; <b>cambiar</b> agenda (reprogramar, liberar un espacio), con aprobaciêÂ³n de recepciêÂ³n; <b>enviar</b> el mensaje estêÂ¡ndar de confirmaciêÂ³n, sêÂ­, porque el texto es fijo y estêÂ¡ aprobado; enviar cualquier otro texto o el recurso a la aseguradora, con aprobaciêÂ³n; <b>comprar</b>, <b>borrar</b> e <b>aprobar</b>, no se puede.</p>
+<p>La êÂºnica lêÂ­nea que se aparta de la escalera del curso base es "enviar la confirmaciêÂ³n estêÂ¡ndar: puede". Se justifica porque el texto no cambia, los cuatro campos estêÂ¡n verificados y no se incluye nada mêÂ¡s. Cualquier mensaje que necesite un texto nuevo vuelve a "con aprobaciêÂ³n". Y cada permiso tiene un responsable con nombre: la gestora para leer y escribir, la coordinadora de recepciêÂ³n para cambiar la agenda, el profesional para firmar el recurso y el certificado.</p>
+<!-- ex-prof --><p>En la clêÂ­nica de Renata, la matriz tiene ocho filas y cabêÂ­a en una hoja pegada en la oficina de la administradora. La fila que generêÂ³ debate fue êÂ«liberar un turno para la lista de esperaêÂ»: recepciêÂ³n querêÂ­a êÂ«puedeêÂ», para agilizar. QuedêÂ³ êÂ«con aprobaciêÂ³nêÂ» durante los dos primeros meses; despuêÂ©s de superar la baterêÂ­a de casos y mantener el registro limpio, pasêÂ³ a êÂ«puedeêÂ», con un lêÂ­mite de dos turnos por dêÂ­a.</p>
 <div class="mobfig" data-mobfig="3"></div>
-<button class="readbtn" data-read="s3">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s3">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="4" data-kind="ferramenta" data-versao="LGPD e normas do CFM/CFO, set/2026">
-<h2><span class="n">04</span> Confidencialidad, consentimiento y registro: quÃ© escribir antes de conectar</h2>
-<p>Tres cosas deben quedar por escrito antes de que funcione cualquier agente de clÃ­nica, y ninguna de ellas es tecnologÃ­a. <b>Confidencialidad</b>: restricciÃ³n fija en la solicitud, "ninguna informaciÃ³n aparte del nombre, la fecha, el horario y el profesional en ningÃºn mensaje". <b>Consentimiento y canal</b>: el paciente autorizÃ³ recibir mensajes en ese telÃ©fono, y a los menores solo se les escribe a travÃ©s del responsable registrado. <b>Registro</b>: cada mensaje enviado y cada recurso preparado quedan registrados con fecha, contenido y quiÃ©n los aprobÃ³, para responder en un minuto cualquier pregunta de un paciente, convenio o consejo.</p>
-<p>El detalle que cambia con el tiempo es la norma, no el principio. Las resoluciones del Consejo Federal de Medicina y del de OdontologÃ­a sobre la comunicaciÃ³n con pacientes y el uso de tecnologÃ­a se actualizan; la LGPD recibe nuevas regulaciones de la autoridad nacional. Por eso este paso estÃ¡ marcado como herramienta, con fecha: el principio (confidencialidad, consentimiento, registro) es fundamental; cuando vayas a firmar, confirma la redacciÃ³n exacta con quien se encarga de los asuntos legales de la clÃ­nica.</p>
-<!-- ex-prof --><p>PatrÃ­cia agregÃ³ en el registro del consultorio un campo nuevo, "acepta mensajes de confirmaciÃ³n y seguimiento del plan: sÃ­/no", que se completa en la primera visita con el consentimiento administrativo. El agente solo contacta a quienes tienen "sÃ­". Fue el cambio mÃ¡s barato de todo el proyecto y el que mÃ¡s le gustÃ³ a la dentista propietaria del consultorio: la pregunta "Â¿puede enviarles mensajes a todos?" dejÃ³ de existir.</p>
+<h2><span class="n">04</span> Confidencialidad, consentimiento y registro: quêÂ© escribir antes de conectar</h2>
+<p>Tres cosas deben quedar por escrito antes de que funcione cualquier agente de clêÂ­nica, y ninguna de ellas es tecnologêÂ­a. <b>Confidencialidad</b>: restricciêÂ³n fija en la solicitud, "ninguna informaciêÂ³n aparte del nombre, la fecha, el horario y el profesional en ningêÂºn mensaje". <b>Consentimiento y canal</b>: el paciente autorizêÂ³ recibir mensajes en ese telêÂ©fono, y a los menores solo se les escribe a travêÂ©s del responsable registrado. <b>Registro</b>: cada mensaje enviado y cada recurso preparado quedan registrados con fecha, contenido y quiêÂ©n los aprobêÂ³, para responder en un minuto cualquier pregunta de un paciente, convenio o consejo.</p>
+<p>El detalle que cambia con el tiempo es la norma, no el principio. Las resoluciones del Consejo Federal de Medicina y del de OdontologêÂ­a sobre la comunicaciêÂ³n con pacientes y el uso de tecnologêÂ­a se actualizan; la LGPD recibe nuevas regulaciones de la autoridad nacional. Por eso este paso estêÂ¡ marcado como herramienta, con fecha: el principio (confidencialidad, consentimiento, registro) es fundamental; cuando vayas a firmar, confirma la redacciêÂ³n exacta con quien se encarga de los asuntos legales de la clêÂ­nica.</p>
+<!-- ex-prof --><p>PatrêÂ­cia agregêÂ³ en el registro del consultorio un campo nuevo, "acepta mensajes de confirmaciêÂ³n y seguimiento del plan: sêÂ­/no", que se completa en la primera visita con el consentimiento administrativo. El agente solo contacta a quienes tienen "sêÂ­". Fue el cambio mêÂ¡s barato de todo el proyecto y el que mêÂ¡s le gustêÂ³ a la dentista propietaria del consultorio: la pregunta "êÂ¿puede enviarles mensajes a todos?" dejêÂ³ de existir.</p>
 <div class="qsteps">
-<p class="qsk">Lista de verificaciÃ³n de gobernanza del agente de clÃ­nica</p>
+<p class="qsk">Lista de verificaciêÂ³n de gobernanza del agente de clêÂ­nica</p>
 <ol>
-<li><b>Historias clÃ­nicas y datos de salud fuera de su alcance</b>, por escrito, incluido el motivo de la consulta.</li>
-<li><b>RestricciÃ³n de confidencialidad en el pedido</b>: solo nombre, fecha, horario y profesional en cualquier mensaje.</li>
-<li><b>Consentimiento y canal</b>: campo en el registro; menores solo a travÃ©s del responsable.</li>
-<li><b>Matriz de siete acciones con responsables</b>: se puede enviar el texto estÃ¡ndar; texto nuevo, apelaciÃ³n al convenio y cambios en la agenda requieren aprobaciÃ³n; comprar, borrar y aprobar no se puede.</li>
-<li><b>Registro guardado</b> de cada mensaje y recurso, con quiÃ©n lo aprobÃ³.</li>
-<li><b>RevisiÃ³n de la redacciÃ³n</b> con quien se encarga del Ã¡rea legal de la clÃ­nica, con la fecha de la norma vigente.</li>
+<li><b>Historias clêÂ­nicas y datos de salud fuera de su alcance</b>, por escrito, incluido el motivo de la consulta.</li>
+<li><b>RestricciêÂ³n de confidencialidad en el pedido</b>: solo nombre, fecha, horario y profesional en cualquier mensaje.</li>
+<li><b>Consentimiento y canal</b>: campo en el registro; menores solo a travêÂ©s del responsable.</li>
+<li><b>Matriz de siete acciones con responsables</b>: se puede enviar el texto estêÂ¡ndar; texto nuevo, apelaciêÂ³n al convenio y cambios en la agenda requieren aprobaciêÂ³n; comprar, borrar y aprobar no se puede.</li>
+<li><b>Registro guardado</b> de cada mensaje y recurso, con quiêÂ©n lo aprobêÂ³.</li>
+<li><b>RevisiêÂ³n de la redacciêÂ³n</b> con quien se encarga del êÂ¡rea legal de la clêÂ­nica, con la fecha de la norma vigente.</li>
 </ol>
 </div>
 <div class="mobfig" data-mobfig="4"></div>
-<button class="readbtn" data-read="s4">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s4">marcar como leêÂ­do</button>
 </section>
-<!-- modo analise justificado: conceder permissÃ£o real a um agente sobre dados de paciente Ã© aÃ§Ã£o com consequÃªncia que nÃ£o se desfaz; a decisÃ£o Ã© treinada num caso antes de ser aplicada -->
+<!-- modo analise justificado: conceder permissêÂ£o real a um agente sobre dados de paciente êÂ© aêÂ§êÂ£o com consequêÂªncia que nêÂ£o se desfaz; a decisêÂ£o êÂ© treinada num caso antes de ser aplicada -->
 <section class="practice" data-mode="analise" data-practice="p2">
 <p class="pk">Practica ahora <span class="pcount">0/4 completado</span></p>
-<h3 class="ph">El caso de la ClÃ­nica Horizonte: decide los permisos y luego los tuyos</h3>
-<p class="pgoal">En unos 12 minutos, lee el caso, decide la matriz y los datos que quedarÃ¡n fuera de alcance, compÃ¡ralos con la clave de respuestas y luego completa la matriz del agente de tu clÃ­nica.</p>
-<p class="psafe">A propÃ³sito, en papel: el permiso para acceder a datos de pacientes es la decisiÃ³n mÃ¡s importante de este cuaderno, asÃ­ que practicas con un caso antes de tomar la tuya. No se configura ningÃºn sistema. Te quedas con tu matriz para llevarla al dueÃ±o de la clÃ­nica y a quien se encarga del sistema.</p>
-<p><b>El caso.</b> La ClÃ­nica Horizonte tiene ocho consultorios, cuatro convenios y 120 consultas por dÃ­a. La gestora, Mariana, diseÃ±Ã³ un agente que confirma consultas, lee respuestas, registra estados y prepara recursos de glosa. El proveedor del sistema tambiÃ©n ofreciÃ³ integrar el mÃ³dulo clÃ­nico "para que el agente le recuerde al paciente que traiga los exÃ¡menes". En recepciÃ³n quieren que el agente reprograme las consultas por su cuenta cuando el paciente lo pida. El sistema tiene, por paciente: nombre, CPF, telÃ©fono, convenio y nÃºmero de tarjeta, responsable, motivo de la consulta, historia clÃ­nica, exÃ¡menes adjuntos.</p>
+<h3 class="ph">El caso de la ClêÂ­nica Horizonte: decide los permisos y luego los tuyos</h3>
+<p class="pgoal">En unos 12 minutos, lee el caso, decide la matriz y los datos que quedarêÂ¡n fuera de alcance, compêÂ¡ralos con la clave de respuestas y luego completa la matriz del agente de tu clêÂ­nica.</p>
+<p class="psafe">A propêÂ³sito, en papel: el permiso para acceder a datos de pacientes es la decisiêÂ³n mêÂ¡s importante de este cuaderno, asêÂ­ que practicas con un caso antes de tomar la tuya. No se configura ningêÂºn sistema. Te quedas con tu matriz para llevarla al dueêÂ±o de la clêÂ­nica y a quien se encarga del sistema.</p>
+<p><b>El caso.</b> La ClêÂ­nica Horizonte tiene ocho consultorios, cuatro convenios y 120 consultas por dêÂ­a. La gestora, Mariana, diseêÂ±êÂ³ un agente que confirma consultas, lee respuestas, registra estados y prepara recursos de glosa. El proveedor del sistema tambiêÂ©n ofreciêÂ³ integrar el mêÂ³dulo clêÂ­nico "para que el agente le recuerde al paciente que traiga los exêÂ¡menes". En recepciêÂ³n quieren que el agente reprograme las consultas por su cuenta cuando el paciente lo pida. El sistema tiene, por paciente: nombre, CPF, telêÂ©fono, convenio y nêÂºmero de tarjeta, responsable, motivo de la consulta, historia clêÂ­nica, exêÂ¡menes adjuntos.</p>
 <ol class="psteps">
-<li><label><input data-ptask="1" type="checkbox"/> Para las siete acciones (leer, escribir, cambiar la agenda, enviar una confirmaciÃ³n estÃ¡ndar, enviar otro texto o recurso, borrar, aprobar), decide: permitido, con aprobaciÃ³n, no permitido. Una lÃ­nea de motivo por decisiÃ³n.</label></li>
-<li><label><input data-ptask="2" type="checkbox"/> De los nueve datos enumerados, marca cuÃ¡les necesita ver el agente y cuÃ¡les deben quedar fuera. Aplica la pregunta "Â¿el trabajo sale igual sin esto?". Decide tambiÃ©n quÃ© hacer con la oferta del proveedor de integrar el mÃ³dulo clÃ­nico.</label></li>
-<li><label><input data-ptask="3" type="checkbox"/> Compara con la clave de respuestas. Si hubo diferencias en el mÃ³dulo clÃ­nico o en "reprogramar sin ayuda", vuelve a leer los pasos 01 y 03.
+<li><label><input data-ptask="1" type="checkbox"/> Para las siete acciones (leer, escribir, cambiar la agenda, enviar una confirmaciêÂ³n estêÂ¡ndar, enviar otro texto o recurso, borrar, aprobar), decide: permitido, con aprobaciêÂ³n, no permitido. Una lêÂ­nea de motivo por decisiêÂ³n.</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> De los nueve datos enumerados, marca cuêÂ¡les necesita ver el agente y cuêÂ¡les deben quedar fuera. Aplica la pregunta "êÂ¿el trabajo sale igual sin esto?". Decide tambiêÂ©n quêÂ© hacer con la oferta del proveedor de integrar el mêÂ³dulo clêÂ­nico.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Compara con la clave de respuestas. Si hubo diferencias en el mêÂ³dulo clêÂ­nico o en "reprogramar sin ayuda", vuelve a leer los pasos 01 y 03.
           <details><summary>Clave de respuestas comentada</summary>
-<p><b>Leer</b> agenda, registro administrativo y estado de cuenta: sÃ­; historia clÃ­nica y exÃ¡menes: no, nunca. <b>Escribir</b> estado y borrador del recurso: sÃ­. <b>Cambiar agenda</b> (reprogramar, liberar un cupo): con aprobaciÃ³n de recepciÃ³n en la primera versiÃ³n; Â«reprogramar por cuenta propiaÂ» es una acciÃ³n que cambia la agenda de un profesional y el dÃ­a de un paciente, no se incluye sin aprobaciÃ³n hasta que pase la baterÃ­a de pruebas. <b>Enviar confirmaciÃ³n estÃ¡ndar</b>: puede, texto fijo y cuatro campos verificados. <b>Enviar otro texto o recurso al seguro mÃ©dico</b>: siempre con aprobaciÃ³n. <b>Borrar</b>: no se puede. <b>Aprobar</b>: no se puede.</p>
-<p><b>Datos.</b> Nombre, telÃ©fono, convenio, responsable: necesarios. NÃºmero de afiliado: solo para el especialista en glosas, para asociarlo con la orden; fuera del alcance del especialista en confirmaciones. CPF: no hace falta, fuera de alcance. Motivo de consulta, historia clÃ­nica, exÃ¡menes: fuera de alcance, sin discusiÃ³n. <b>MÃ³dulo clÃ­nico</b>: no. Â«Recuerda traer los estudiosÂ» parece administrativo, pero exige saber quÃ© estudio, y eso es un dato de salud. La alternativa administrativa es el mensaje estÃ¡ndar Â«trae los estudios solicitados por el profesionalÂ», sin mencionar ninguno.</p>
-<p><b>Responsables.</b> Mariana para leer, escribir y enviar la plantilla; la coordinadora de recepciÃ³n para modificar la agenda; el profesional responsable para firmar el recurso. Todo queda registrado y guardado.</p>
+<p><b>Leer</b> agenda, registro administrativo y estado de cuenta: sêÂ­; historia clêÂ­nica y exêÂ¡menes: no, nunca. <b>Escribir</b> estado y borrador del recurso: sêÂ­. <b>Cambiar agenda</b> (reprogramar, liberar un cupo): con aprobaciêÂ³n de recepciêÂ³n en la primera versiêÂ³n; êÂ«reprogramar por cuenta propiaêÂ» es una acciêÂ³n que cambia la agenda de un profesional y el dêÂ­a de un paciente, no se incluye sin aprobaciêÂ³n hasta que pase la baterêÂ­a de pruebas. <b>Enviar confirmaciêÂ³n estêÂ¡ndar</b>: puede, texto fijo y cuatro campos verificados. <b>Enviar otro texto o recurso al seguro mêÂ©dico</b>: siempre con aprobaciêÂ³n. <b>Borrar</b>: no se puede. <b>Aprobar</b>: no se puede.</p>
+<p><b>Datos.</b> Nombre, telêÂ©fono, convenio, responsable: necesarios. NêÂºmero de afiliado: solo para el especialista en glosas, para asociarlo con la orden; fuera del alcance del especialista en confirmaciones. CPF: no hace falta, fuera de alcance. Motivo de consulta, historia clêÂ­nica, exêÂ¡menes: fuera de alcance, sin discusiêÂ³n. <b>MêÂ³dulo clêÂ­nico</b>: no. êÂ«Recuerda traer los estudiosêÂ» parece administrativo, pero exige saber quêÂ© estudio, y eso es un dato de salud. La alternativa administrativa es el mensaje estêÂ¡ndar êÂ«trae los estudios solicitados por el profesionalêÂ», sin mencionar ninguno.</p>
+<p><b>Responsables.</b> Mariana para leer, escribir y enviar la plantilla; la coordinadora de recepciêÂ³n para modificar la agenda; el profesional responsable para firmar el recurso. Todo queda registrado y guardado.</p>
 </details>
 </label></li>
-<li><label><input data-ptask="4" type="checkbox"/> Completa la matriz del agente de TU clÃ­nica: siete acciones, respuesta, responsable con nombre y la lista de datos fuera de su alcance. EstÃ¡ lista cuando las historias clÃ­nicas y el motivo de consulta estÃ¡n en la lista de exclusiones y ninguna fila queda sin responsable.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Completa la matriz del agente de TU clêÂ­nica: siete acciones, respuesta, responsable con nombre y la lista de datos fuera de su alcance. EstêÂ¡ lista cuando las historias clêÂ­nicas y el motivo de consulta estêÂ¡n en la lista de exclusiones y ninguna fila queda sin responsable.</label></li>
 </ol>
-<p class="pdone">Acabas de decidir por escrito quÃ© puede ver y hacer un agente en tu clÃ­nica, con la historia clÃ­nica fuera. Esta hoja es lo que necesita el dueÃ±o de la clÃ­nica para dar el sÃ­.</p>
+<p class="pdone">Acabas de decidir por escrito quêÂ© puede ver y hacer un agente en tu clêÂ­nica, con la historia clêÂ­nica fuera. Esta hoja es lo que necesita el dueêÂ±o de la clêÂ­nica para dar el sêÂ­.</p>
 </section>
 </div>
 <aside class="rail"><div class="railsticky">
 <div class="figstage">
-<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o mesmo sistema da clÃ­nica, dividido por uma cerca. Ã€ esquerda, cadastro, agenda, faturamento e tabela do convÃªnio: o agente alcanÃ§a. Ã€ direita, motivo, evoluÃ§Ã£o, exames, diagnÃ³stico e prescriÃ§Ã£o: dado sensÃ­vel, fora do alcance, sem 'com aprovaÃ§Ã£o'." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o mesmo sistema da clêÂ­nica, dividido por uma cerca. êâ¬ esquerda, cadastro, agenda, faturamento e tabela do convêÂªnio: o agente alcanêÂ§a. êâ¬ direita, motivo, evoluêÂ§êÂ£o, exames, diagnêÂ³stico e prescriêÂ§êÂ£o: dado sensêÂ­vel, fora do alcance, sem 'com aprovaêÂ§êÂ£o'." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect height="170" rx="10" stroke="#37324a" stroke-width="1.5" width="200" x="10" y="14"></rect>
-<text fill="#948DA6" font-family="monospace" font-size="7.5" x="18" y="30">sistema de la clÃ­nica</text>
+<text fill="#948DA6" font-family="monospace" font-size="7.5" x="18" y="30">sistema de la clêÂ­nica</text>
 <path d="M110 40 v136" stroke="#E0736F" stroke-dasharray="5 4" stroke-width="2"></path>
 <g fill="#ECE6D9" font-family="monospace" font-size="7">
 <rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="84" x="18" y="44"></rect><text x="24" y="56">registro adm.</text>
 <rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="84" x="18" y="68"></rect><text x="24" y="80">agenda</text>
-<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="84" x="18" y="92"></rect><text x="24" y="104">facturaciÃ³n</text>
+<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="84" x="18" y="92"></rect><text x="24" y="104">facturaciêÂ³n</text>
 <rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="84" x="18" y="116"></rect><text x="24" y="128">tabla del convenio</text>
 <rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="44"></rect><text fill="#E0736F" x="124" y="56">motivo</text>
-<rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="68"></rect><text fill="#E0736F" x="124" y="80">evoluciÃ³n</text>
-<rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="92"></rect><text fill="#E0736F" x="124" y="104">exÃ¡menes</text>
-<rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="116"></rect><text fill="#E0736F" x="124" y="128">diagnÃ³stico</text>
+<rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="68"></rect><text fill="#E0736F" x="124" y="80">evoluciêÂ³n</text>
+<rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="92"></rect><text fill="#E0736F" x="124" y="104">exêÂ¡menes</text>
+<rect height="18" rx="3" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="84" x="118" y="116"></rect><text fill="#E0736F" x="124" y="128">diagnêÂ³stico</text>
 </g>
 <rect fill="#221f2e" height="26" rx="5" stroke="#7CE0C6" stroke-width="1.5" width="84" x="18" y="146"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="34" y="163">agente</text>
 <text fill="#E0736F" font-family="monospace" font-size="7" x="122" y="162">dato sensible</text>
 <text fill="#6C6580" font-family="monospace" font-size="7.5" x="30" y="194">el trabajo sale igual sin el lado derecho</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; trÃªs caminhos para o agente de clÃ­nica. Chat com pasta de projeto (sÃ³ glosas, sem nome de paciente); plataforma de mensagens da clÃ­nica (confirmaÃ§Ã£o por regra); integraÃ§Ã£o pela porta de serviÃ§o (agenda lida sozinha, com contrato). A seta vermelha Ã© o erro: exportar a agenda com motivo e colar no chat." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; trêÂªs caminhos para o agente de clêÂ­nica. Chat com pasta de projeto (sêÂ³ glosas, sem nome de paciente); plataforma de mensagens da clêÂ­nica (confirmaêÂ§êÂ£o por regra); integraêÂ§êÂ£o pela porta de serviêÂ§o (agenda lida sozinha, com contrato). A seta vermelha êÂ© o erro: exportar a agenda com motivo e colar no chat." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect fill="#221f2e" height="60" rx="8" stroke="#948DA6" stroke-width="1.5" width="68" x="140" y="70"></rect><text fill="#ECE6D9" font-family="monospace" font-size="8" x="152" y="104">agente</text>
 <rect height="26" rx="4" stroke="#948DA6" stroke-width="1.2" width="76" x="12" y="20"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="31">chat + carpeta</text><text fill="#948DA6" font-family="monospace" font-size="6.5" x="16" y="41">glosas, sin nombre</text>
 <path d="M88 33 h30 l22 40" fill="none" stroke="#948DA6" stroke-dasharray="3 3" stroke-width="1.2"></path>
-<rect height="26" rx="4" stroke="#7CE0C6" stroke-width="1.2" width="76" x="12" y="88"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="99">mensajerÃ­a</text><text fill="#948DA6" font-family="monospace" font-size="6.5" x="16" y="109">confirmaciÃ³n</text>
+<rect height="26" rx="4" stroke="#7CE0C6" stroke-width="1.2" width="76" x="12" y="88"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="99">mensajerêÂ­a</text><text fill="#948DA6" font-family="monospace" font-size="6.5" x="16" y="109">confirmaciêÂ³n</text>
 <path d="M88 100 h52" stroke="#7CE0C6" stroke-width="1.5"></path>
-<rect height="26" rx="4" stroke="#F2B45C" stroke-width="1.2" width="76" x="12" y="156"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="167">integraciÃ³n</text><text fill="#948DA6" font-family="monospace" font-size="6.5" x="16" y="177">agenda + contrato</text>
+<rect height="26" rx="4" stroke="#F2B45C" stroke-width="1.2" width="76" x="12" y="156"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6.5" x="16" y="167">integraciêÂ³n</text><text fill="#948DA6" font-family="monospace" font-size="6.5" x="16" y="177">agenda + contrato</text>
 <path d="M88 168 h30 l22 -40" fill="none" stroke="#F2B45C" stroke-width="1.5"></path>
 <rect height="36" rx="4" stroke="#E0736F" stroke-dasharray="3 3" stroke-width="1.2" width="88" x="120" y="150"></rect><text fill="#E0736F" font-family="monospace" font-size="6.5" x="126" y="164">agenda c/ motivo</text><text fill="#E0736F" font-family="monospace" font-size="6.5" x="126" y="176">pegada al chat</text>
 <path d="M150 150 l20 -14" stroke="#E0736F" stroke-width="1.5"></path><path d="M160 136 l10 12 M170 136 l-10 12" stroke="#E0736F" stroke-width="1.5"></path>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a matriz do agente de clÃ­nica: sete aÃ§Ãµes e a escada da primeira versÃ£o. A Ãºnica linha fora da escada do curso-base Ã© 'enviar confirmaÃ§Ã£o padrÃ£o: pode' (texto fixo, quatro campos verificados). Cada linha com dono." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a matriz do agente de clêÂ­nica: sete aêÂ§êÂµes e a escada da primeira versêÂ£o. A êÂºnica linha fora da escada do curso-base êÂ© 'enviar confirmaêÂ§êÂ£o padrêÂ£o: pode' (texto fixo, quatro campos verificados). Cada linha com dono." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <g fill="#948DA6" font-family="monospace" font-size="6.5"><text x="90" y="18">puede</text><text x="124" y="18">c/ aprob.</text><text x="172" y="18">no</text></g>
 <g fill="#ECE6D9" font-family="monospace" font-size="7">
 <text x="10" y="36">leer (adm.)</text><text x="10" y="56">redactar</text><text x="10" y="76">cambiar agenda</text><text x="10" y="96">enviar predeterminado</text><text x="10" y="116">enviar otro</text><text x="10" y="136">borrar</text><text x="10" y="156">aprobar</text>
@@ -444,11 +444,11 @@
 <rect fill="#E0736F" height="12" opacity=".9" rx="2" width="24" x="172" y="128"></rect>
 <rect fill="#E0736F" height="12" opacity=".9" rx="2" width="24" x="172" y="148"></rect>
 <text fill="#6C6580" font-family="monospace" font-size="7" x="10" y="180">* texto fijo + 4 campos verificados</text>
-<text fill="#6C6580" font-family="monospace" font-size="7" x="10" y="192">historial clÃ­nico: ni en la columna "leer"</text>
+<text fill="#6C6580" font-family="monospace" font-size="7" x="10" y="192">historial clêÂ­nico: ni en la columna "leer"</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; os trÃªs documentos que entram antes de ligar o agente: sigilo como restriÃ§Ã£o no pedido, consentimento e canal no cadastro (menor sÃ³ pelo responsÃ¡vel), e o registro guardado de toda mensagem e recurso. Embaixo, o carimbo de data: a norma muda, o princÃ­pio nÃ£o." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; os trêÂªs documentos que entram antes de ligar o agente: sigilo como restriêÂ§êÂ£o no pedido, consentimento e canal no cadastro (menor sêÂ³ pelo responsêÂ¡vel), e o registro guardado de toda mensagem e recurso. Embaixo, o carimbo de data: a norma muda, o princêÂ­pio nêÂ£o." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect fill="#ECE6D9" height="70" opacity=".12" rx="4" stroke="#7CE0C6" stroke-width="1.2" width="60" x="12" y="20"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7" x="18" y="40">confidencialidad</text><path d="M18 50 h46 M18 60 h40 M18 70 h44" stroke="#948DA6" stroke-width="1"></path>
-<rect fill="#ECE6D9" height="70" opacity=".12" rx="4" stroke="#7CE0C6" stroke-width="1.2" width="60" x="80" y="20"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7" x="86" y="40">consent.</text><rect height="8" stroke="#7CE0C6" stroke-width="1" width="8" x="86" y="50"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6" x="98" y="57">acepta msg</text><text fill="#948DA6" font-family="monospace" font-size="6" x="86" y="74">menor â†’ resp.</text>
+<rect fill="#ECE6D9" height="70" opacity=".12" rx="4" stroke="#7CE0C6" stroke-width="1.2" width="60" x="80" y="20"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7" x="86" y="40">consent.</text><rect height="8" stroke="#7CE0C6" stroke-width="1" width="8" x="86" y="50"></rect><text fill="#ECE6D9" font-family="monospace" font-size="6" x="98" y="57">acepta msg</text><text fill="#948DA6" font-family="monospace" font-size="6" x="86" y="74">menor ê¢â â resp.</text>
 <rect fill="#ECE6D9" height="70" opacity=".12" rx="4" stroke="#7CE0C6" stroke-width="1.2" width="60" x="148" y="20"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7" x="154" y="40">registro</text><path d="M154 50 h46 M154 58 h46 M154 66 h46 M154 74 h46" stroke="#948DA6" stroke-width="1"></path>
 <path d="M42 90 v20 M110 90 v20 M178 90 v20 M42 110 h136" stroke="#948DA6" stroke-width="1.2"></path><path d="M110 110 v14" stroke="#7CE0C6" stroke-width="1.5"></path>
 <rect fill="#221f2e" height="24" rx="6" stroke="#7CE0C6" stroke-width="1.5" width="80" x="70" y="124"></rect><text fill="#7CE0C6" font-family="monospace" font-size="8" x="84" y="140">activar agente</text>
@@ -464,58 +464,58 @@
 <div class="recap-autor">
 <p class="rak">Resumen</p>
 <ul>
-<li>El sistema de la clÃ­nica tiene dos lados. El agente se encarga de los registros, la agenda, la facturaciÃ³n y la tabla de la obra social; las historias clÃ­nicas y todos los datos de salud quedan fuera, sin "con aprobaciÃ³n".</li>
-<li>Hoy, el agente funciona en un chat con una carpeta de proyecto (solo glosas, sin nombres), en el sistema de mensajerÃ­a de la clÃ­nica o integrado al sistema. Los telÃ©fonos asociados a nombres no se manejan en un chat genÃ©rico.</li>
-<li>La matriz de la clÃ­nica sigue la escalera del curso base con una excepciÃ³n defendible: se puede enviar la confirmaciÃ³n estÃ¡ndar porque el texto es fijo y estÃ¡ verificado.</li>
-<li>Antes de conectar: confidencialidad como restricciÃ³n, consentimiento y canal en el registro, registro guardado. La norma cambia con la fecha; el principio, no.</li>
+<li>El sistema de la clêÂ­nica tiene dos lados. El agente se encarga de los registros, la agenda, la facturaciêÂ³n y la tabla de la obra social; las historias clêÂ­nicas y todos los datos de salud quedan fuera, sin "con aprobaciêÂ³n".</li>
+<li>Hoy, el agente funciona en un chat con una carpeta de proyecto (solo glosas, sin nombres), en el sistema de mensajerêÂ­a de la clêÂ­nica o integrado al sistema. Los telêÂ©fonos asociados a nombres no se manejan en un chat genêÂ©rico.</li>
+<li>La matriz de la clêÂ­nica sigue la escalera del curso base con una excepciêÂ³n defendible: se puede enviar la confirmaciêÂ³n estêÂ¡ndar porque el texto es fijo y estêÂ¡ verificado.</li>
+<li>Antes de conectar: confidencialidad como restricciêÂ³n, consentimiento y canal en el registro, registro guardado. La norma cambia con la fecha; el principio, no.</li>
 </ul>
 </div>
 <div class="next-action">
-<p class="nak">Tu prÃ³ximo paso</p>
-<p class="na-win">Acabas de decidir quÃ© puede ver y hacer un agente en tu clÃ­nica, con la historia clÃ­nica fuera y una persona responsable por cada permiso.</p>
-<p class="na-action">En los prÃ³ximos 15 minutos, abre el registro de tu sistema y comprueba si existe un campo de consentimiento para mensajes. Si no existe, redacta el texto del campo y envÃ­aselo a quien se encarga del sistema.</p>
-<p class="na-hook">En la Ãºltima clase armas todo en el Kit del Arquitecto de Agentes, a partir del preset de salud, y ensayas el agente de tu clÃ­nica en un chat con un caso ficticio.</p>
+<p class="nak">Tu prêÂ³ximo paso</p>
+<p class="na-win">Acabas de decidir quêÂ© puede ver y hacer un agente en tu clêÂ­nica, con la historia clêÂ­nica fuera y una persona responsable por cada permiso.</p>
+<p class="na-action">En los prêÂ³ximos 15 minutos, abre el registro de tu sistema y comprueba si existe un campo de consentimiento para mensajes. Si no existe, redacta el texto del campo y envêÂ­aselo a quien se encarga del sistema.</p>
+<p class="na-hook">En la êÂºltima clase armas todo en el Kit del Arquitecto de Agentes, a partir del preset de salud, y ensayas el agente de tu clêÂ­nica en un chat con un caso ficticio.</p>
 </div>
 </div>
-<nav class="lnav"><a href="#aula-1">â† clase 1</a><a href="#aula-3">siguiente: la especificaciÃ³n en el kit â†’</a></nav>
-<footer>Clase 2 Â· Agentes en la ClÃ­nica Â· ARCKHÉ AI PRO</footer>
+<nav class="lnav"><a href="#aula-1">ê¢â Â clase 1</a><a href="#aula-3">siguiente: la especificaciêÂ³n en el kit ê¢â â</a></nav>
+<footer>Clase 2 êÂ· Agentes en la ClêÂ­nica êÂ· ARCKHê AI PRO</footer>
 <script id="cards-2" type="application/json">
 [
-  {"front":"O fornecedor do sistema oferece integrar o mÃ³dulo clÃ­nico 'para o agente lembrar o paciente de trazer exames'. O que vocÃª responde e qual a alternativa?","back":"NÃ£o. Saber qual exame Ã© dado de saÃºde. A alternativa administrativa Ã© a mensagem padrÃ£o 'traga os exames solicitados pelo profissional', sem nomear nenhum."},
-  {"front":"Uma recepcionista exportou a agenda de amanhÃ£ para testar a confirmaÃ§Ã£o no chat. Que coluna vocÃª confere antes de ela colar, e por quÃª?","back":"Motivo da consulta (e qualquer outra alÃ©m de nome, data, horÃ¡rio, profissional). Ã‰ dado de saÃºde saindo da clÃ­nica para um serviÃ§o externo. Exportar sÃ³ as quatro colunas e trocar os nomes no teste."},
-  {"front":"Por que 'enviar confirmaÃ§Ã£o padrÃ£o' pode ser 'pode' enquanto 'enviar recurso ao convÃªnio' Ã© 'com aprovaÃ§Ã£o'?","back":"A confirmaÃ§Ã£o tem texto fixo aprovado e quatro campos verificados; nada novo entra. O recurso tem texto que varia por guia e sai para um terceiro, e a assinatura Ã© do profissional."},
-  {"front":"A recepÃ§Ã£o quer que o agente remarque sozinho quando o paciente pedir. Como vocÃª decide, e quando isso pode mudar?","back":"Com aprovaÃ§Ã£o na primeira versÃ£o: muda a agenda de um profissional e o dia de um paciente. Vira 'pode', talvez com limite diÃ¡rio, depois de a bateria passar e um ou dois meses de registro limpo."},
-  {"front":"Qual foi a mudanÃ§a mais barata do projeto do consultÃ³rio de PatrÃ­cia, e o que ela resolveu?","back":"Um campo no cadastro: 'aceita mensagem: sim/nÃ£o', preenchido na primeira visita. Resolveu consentimento e canal, e acabou com a pergunta 'ele pode mandar mensagem para todo mundo?'."}
+  {"front":"O fornecedor do sistema oferece integrar o mêÂ³dulo clêÂ­nico 'para o agente lembrar o paciente de trazer exames'. O que vocêÂª responde e qual a alternativa?","back":"NêÂ£o. Saber qual exame êÂ© dado de saêÂºde. A alternativa administrativa êÂ© a mensagem padrêÂ£o 'traga os exames solicitados pelo profissional', sem nomear nenhum."},
+  {"front":"Uma recepcionista exportou a agenda de amanhêÂ£ para testar a confirmaêÂ§êÂ£o no chat. Que coluna vocêÂª confere antes de ela colar, e por quêÂª?","back":"Motivo da consulta (e qualquer outra alêÂ©m de nome, data, horêÂ¡rio, profissional). êâ° dado de saêÂºde saindo da clêÂ­nica para um serviêÂ§o externo. Exportar sêÂ³ as quatro colunas e trocar os nomes no teste."},
+  {"front":"Por que 'enviar confirmaêÂ§êÂ£o padrêÂ£o' pode ser 'pode' enquanto 'enviar recurso ao convêÂªnio' êÂ© 'com aprovaêÂ§êÂ£o'?","back":"A confirmaêÂ§êÂ£o tem texto fixo aprovado e quatro campos verificados; nada novo entra. O recurso tem texto que varia por guia e sai para um terceiro, e a assinatura êÂ© do profissional."},
+  {"front":"A recepêÂ§êÂ£o quer que o agente remarque sozinho quando o paciente pedir. Como vocêÂª decide, e quando isso pode mudar?","back":"Com aprovaêÂ§êÂ£o na primeira versêÂ£o: muda a agenda de um profissional e o dia de um paciente. Vira 'pode', talvez com limite diêÂ¡rio, depois de a bateria passar e um ou dois meses de registro limpo."},
+  {"front":"Qual foi a mudanêÂ§a mais barata do projeto do consultêÂ³rio de PatrêÂ­cia, e o que ela resolveu?","back":"Um campo no cadastro: 'aceita mensagem: sim/nêÂ£o', preenchido na primeira visita. Resolveu consentimento e canal, e acabou com a pergunta 'ele pode mandar mensagem para todo mundo?'."}
 ]
 </script>
 <!-- COMPLETUDE aula-2 | tipo=FERRAMENTA | steps=4
   [OK] promise            .promise no cold-open (1)
-  [OK] why                .why apÃ³s a promessa (1)
+  [OK] why                .why apêÂ³s a promessa (1)
   [OK] tempo              data-tempo="21min" no view + render no cold-open (1)
-  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Renata, PatrÃ­cia, Renata, PatrÃ­cia)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Renata, PatrêÂ­cia, Renata, PatrêÂ­cia)
   [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4, data-fig 1..4)
-  [OK] practice           .practice[data-mode="analise"] (exatamente 1; modo justificado: permissÃ£o sobre dado de paciente Ã© irreversÃ­vel)
-  [OK] psafe              .psafe dentro da prÃ¡tica (1)
+  [OK] practice           .practice[data-mode="analise"] (exatamente 1; modo justificado: permissêÂ£o sobre dado de paciente êÂ© irreversêÂ­vel)
+  [OK] psafe              .psafe dentro da prêÂ¡tica (1)
   [OK] pgoal-tempo        .pgoal com tempo declarado (~12 min) (1)
   [OK] recap-autor        .recap-autor no fecho (1)
   [OK] next-action        .next-action no fecho (1)
-  [OK] cards              <script id="cards-2"> presente (5 cartÃµes opcionais: decisÃ£o, aplicaÃ§Ã£o, contraste, decisÃ£o, pergunta)
-  [OK] anti-duplicacao    Â§11.3 â€” 3 testes passam (substring / forma / operaÃ§Ã£o)
-  [N/A] teste-se-FUND     aula Ã© FERRAMENTA (obrigaÃ§Ã£o nÃ£o se aplica); sem teste-se opcional
-  dosagem: qerr (step 02) + qsteps (step 04) obrigatÃ³rios + cartÃµes opcionais = 3 (teto 5). densidade: 2 quadros em 4 steps, nÃ£o adjacentes. data-versao nos steps 02 e 04. rampa de acesso antes da integraÃ§Ã£o ("regra da impressora").
+  [OK] cards              <script id="cards-2"> presente (5 cartêÂµes opcionais: decisêÂ£o, aplicaêÂ§êÂ£o, contraste, decisêÂ£o, pergunta)
+  [OK] anti-duplicacao    êÂ§11.3 ê¢â¬â 3 testes passam (substring / forma / operaêÂ§êÂ£o)
+  [N/A] teste-se-FUND     aula êÂ© FERRAMENTA (obrigaêÂ§êÂ£o nêÂ£o se aplica); sem teste-se opcional
+  dosagem: qerr (step 02) + qsteps (step 04) obrigatêÂ³rios + cartêÂµes opcionais = 3 (teto 5). densidade: 2 quadros em 4 steps, nêÂ£o adjacentes. data-versao nos steps 02 e 04. rampa de acesso antes da integraêÂ§êÂ£o ("regra da impressora").
 -->
 </section>
-<!-- ===== AULA 3 Â· PRÃTICA/INTEGRAÃ‡ÃƒO ===== -->
+<!-- ===== AULA 3 êÂ· PRêÂTICA/INTEGRAêâ¡êÆO ===== -->
 <section class="view" data-aula="3" data-tempo="24min" id="v-aula-3">
 <header class="hero"><div class="hero-inner">
 <div>
-<p class="kicker">Cuaderno de Salud Â· Clase 3</p>
-<h1>Tu especificaciÃ³n en el kit:<br/><em>confirmaciÃ³n y glosas</em></h1>
-<p class="promise">Al terminar esta clase podrÃ¡s preparar la especificaciÃ³n del agente de tu clÃ­nica en el Kit del Arquitecto de Agentes, a partir del preset de salud, y ensayarla en un chat de IA con un caso ficticio.</p>
-<p class="why">Tienes el proceso mapeado (clase 1) y la matriz definida (clase 2). Falta reunirlo todo en una pÃ¡gina que el dueÃ±o de la clÃ­nica apruebe en ocho minutos y que quien se encarga del sistema pueda construir. El kit arma todo, y el preset de salud ya viene con la clÃ­nica de Renata completada en los siete bloques, con las reglas de este cuaderno incorporadas: historia clÃ­nica fuera, confidencialidad como restricciÃ³n, plazo para las glosas, consentimiento. Tu trabajo es cambiar lo que corresponde a tu clÃ­nica y ensayar.</p>
-<p class="cue"><span class="arw">â†“</span> rol para estudiar</p>
+<p class="kicker">Cuaderno de Salud êÂ· Clase 3</p>
+<h1>Tu especificaciêÂ³n en el kit:<br/><em>confirmaciêÂ³n y glosas</em></h1>
+<p class="promise">Al terminar esta clase podrêÂ¡s preparar la especificaciêÂ³n del agente de tu clêÂ­nica en el Kit del Arquitecto de Agentes, a partir del preset de salud, y ensayarla en un chat de IA con un caso ficticio.</p>
+<p class="why">Tienes el proceso mapeado (clase 1) y la matriz definida (clase 2). Falta reunirlo todo en una pêÂ¡gina que el dueêÂ±o de la clêÂ­nica apruebe en ocho minutos y que quien se encarga del sistema pueda construir. El kit arma todo, y el preset de salud ya viene con la clêÂ­nica de Renata completada en los siete bloques, con las reglas de este cuaderno incorporadas: historia clêÂ­nica fuera, confidencialidad como restricciêÂ³n, plazo para las glosas, consentimiento. Tu trabajo es cambiar lo que corresponde a tu clêÂ­nica y ensayar.</p>
+<p class="cue"><span class="arw">ê¢â â</span> rol para estudiar</p>
 </div>
-<!-- herofig Â· METÃFORA-DO-MUNDO-REAL: prancheta de check-in de recepÃ§Ã£o com a folha de rotina preenchida, carimbo e caneta -->
+<!-- herofig êÂ· METêÂFORA-DO-MUNDO-REAL: prancheta de check-in de recepêÂ§êÂ£o com a folha de rotina preenchida, carimbo e caneta -->
 <div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
 <rect fill="#1a1824" height="180" rx="6" stroke="#948DA6" stroke-width="2" width="140" x="80" y="30"></rect>
 <rect fill="#948DA6" height="18" rx="4" width="40" x="130" y="20"></rect>
@@ -530,137 +530,137 @@
 <div class="layout">
 <div class="col">
 <section class="step" data-fig="1" data-kind="fundamento">
-<h2><span class="n">01</span> El caso que trae el preset y lo que cambia de una clÃ­nica a otra</h2>
-<p>El preset de salud del kit es la clÃ­nica de Renata, que seguiste en las clases 1 y 2, ahora con los siete bloques: confirmaciÃ³n del dÃ­a siguiente y recurso de glosas por cÃ³digo, seis consultorios, cuatro convenios. Las reglas de este cuaderno ya estÃ¡n escritas: motivo de consulta e historia clÃ­nica fuera de alcance, confidencialidad y LGPD como restricciones fijas, menores solo por medio de su responsable, recurso al convenio solo con aprobaciÃ³n y la excepciÃ³n Â«el paciente hace una pregunta â†’ recepciÃ³nÂ».</p>
-<p>Lo que cambia de una clÃ­nica a otra es previsible: los convenios y sus tablas, la hora de envÃ­o, el texto estÃ¡ndar aprobado, quiÃ©n aprueba quÃ© y el proceso elegido. Un consultorio odontolÃ³gico cambia las glosas por planes de tratamiento. La estructura se mantiene; el contenido es tuyo.</p>
-<!-- ex-prof --><p>Renata cargÃ³ el preset y cambiÃ³ seis cosas: las cuatro obras sociales, el horario (su clÃ­nica envÃ­a los mensajes a las 16h), el texto estÃ¡ndar, el nombre de la coordinadora de recepciÃ³n como responsable de "cambiar la agenda", el lÃ­mite de objeciÃ³n que activa una alerta (ella usa 1.500 reales) y el conjunto de casos, que armÃ³ con quince consultas y objeciones reales de marzo, con los nombres cambiados. PatrÃ­cia cambiÃ³ mÃ¡s: todo el proceso pasÃ³ a ser seguimiento de planes de tratamiento, pero la matriz y los datos excluidos quedaron casi iguales.</p>
+<h2><span class="n">01</span> El caso que trae el preset y lo que cambia de una clêÂ­nica a otra</h2>
+<p>El preset de salud del kit es la clêÂ­nica de Renata, que seguiste en las clases 1 y 2, ahora con los siete bloques: confirmaciêÂ³n del dêÂ­a siguiente y recurso de glosas por cêÂ³digo, seis consultorios, cuatro convenios. Las reglas de este cuaderno ya estêÂ¡n escritas: motivo de consulta e historia clêÂ­nica fuera de alcance, confidencialidad y LGPD como restricciones fijas, menores solo por medio de su responsable, recurso al convenio solo con aprobaciêÂ³n y la excepciêÂ³n êÂ«el paciente hace una pregunta ê¢â â recepciêÂ³nêÂ».</p>
+<p>Lo que cambia de una clêÂ­nica a otra es previsible: los convenios y sus tablas, la hora de envêÂ­o, el texto estêÂ¡ndar aprobado, quiêÂ©n aprueba quêÂ© y el proceso elegido. Un consultorio odontolêÂ³gico cambia las glosas por planes de tratamiento. La estructura se mantiene; el contenido es tuyo.</p>
+<!-- ex-prof --><p>Renata cargêÂ³ el preset y cambiêÂ³ seis cosas: las cuatro obras sociales, el horario (su clêÂ­nica envêÂ­a los mensajes a las 16h), el texto estêÂ¡ndar, el nombre de la coordinadora de recepciêÂ³n como responsable de "cambiar la agenda", el lêÂ­mite de objeciêÂ³n que activa una alerta (ella usa 1.500 reales) y el conjunto de casos, que armêÂ³ con quince consultas y objeciones reales de marzo, con los nombres cambiados. PatrêÂ­cia cambiêÂ³ mêÂ¡s: todo el proceso pasêÂ³ a ser seguimiento de planes de tratamiento, pero la matriz y los datos excluidos quedaron casi iguales.</p>
 <div class="qapply">
-<p class="qak">En tu clÃ­nica, el primer proceso suele ser</p>
+<p class="qak">En tu clêÂ­nica, el primer proceso suele ser</p>
 <ul>
-<li><b>Administradora de clÃ­nica mÃ©dica:</b> confirmaciÃ³n del dÃ­a siguiente y glosas por cÃ³digo, lo que ya incluye el preset. Segundo proceso: lista de espera y espacios disponibles.</li>
-<li><b>Administradora de consultorio odontolÃ³gico:</b> retomar los planes de tratamiento presentados y no concretados, con un mensaje estÃ¡ndar y la programaciÃ³n de una conversaciÃ³n con la dentista. DespuÃ©s, rechazos por falta de documentos.</li>
-<li><b>ClÃ­nica de diagnÃ³stico por imÃ¡genes o laboratorio:</b> confirmaciÃ³n con texto de preparaciÃ³n aprobado por el profesional, sin responder preguntas; la entrega de resultados es administrativa solo hasta Â«tu examen estÃ¡ disponibleÂ», nunca el contenido.</li>
+<li><b>Administradora de clêÂ­nica mêÂ©dica:</b> confirmaciêÂ³n del dêÂ­a siguiente y glosas por cêÂ³digo, lo que ya incluye el preset. Segundo proceso: lista de espera y espacios disponibles.</li>
+<li><b>Administradora de consultorio odontolêÂ³gico:</b> retomar los planes de tratamiento presentados y no concretados, con un mensaje estêÂ¡ndar y la programaciêÂ³n de una conversaciêÂ³n con la dentista. DespuêÂ©s, rechazos por falta de documentos.</li>
+<li><b>ClêÂ­nica de diagnêÂ³stico por imêÂ¡genes o laboratorio:</b> confirmaciêÂ³n con texto de preparaciêÂ³n aprobado por el profesional, sin responder preguntas; la entrega de resultados es administrativa solo hasta êÂ«tu examen estêÂ¡ disponibleêÂ», nunca el contenido.</li>
 </ul>
 </div>
 <div class="mobfig" data-mobfig="1"></div>
-<button class="readbtn" data-read="s1">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s1">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="2" data-kind="ferramenta" data-versao="Kit do Arquiteto de Agentes v1, set/2026">
-<h2><span class="n">02</span> Cargar el preset y marcar el Ã¡rea activa las reglas de salud</h2>
-<p>En el kit, el selector Â«cargar ejemplo por Ã¡reaÂ» tiene la opciÃ³n salud. Al cargarlo, el campo Â«Ã¡reaÂ» queda en salud y se activan tres verificaciones que el kit hace automÃ¡ticamente, ademÃ¡s de las generales del curso base: si los datos de salud (historia clÃ­nica, diagnÃ³stico, informe, examen) no estÃ¡n en la lista de elementos fuera de alcance, aparece una omisiÃ³n; si alguna acciÃ³n u objetivo incluye un tÃ©rmino clÃ­nico (diagnÃ³stico, prescripciÃ³n, conducta), aparece otra; si LGPD, consentimiento o confidencialidad no aparecen en ninguna parte, aparece una tercera.</p>
-<p>Esto parece una pantalla llena de campos, pero funciona como la ficha de admisiÃ³n del paciente: cada campo es una pregunta que respondes una vez, y el kit arma la pÃ¡gina por sÃ­ solo. Si borras por accidente una restricciÃ³n de confidencialidad, la omisiÃ³n aparece debajo de la especificaciÃ³n antes de que la entregues.</p>
-<!-- ex-prof --><p>Al adaptar el preset para los planes de tratamiento, PatrÃ­cia escribiÃ³ en el objetivo "retomar el contacto con pacientes que recibieron un plan e indicar el tratamiento pendiente". El kit marcÃ³: "alguna acciÃ³n u objetivo parece clÃ­nico". Ella lo cambiÃ³ por "retomar el contacto con pacientes que recibieron un plan y agendar una conversaciÃ³n con la dentista". La dentista es quien habla del tratamiento pendiente. Fue la brecha que mÃ¡s agradeciÃ³ que se seÃ±alara.</p>
+<h2><span class="n">02</span> Cargar el preset y marcar el êÂ¡rea activa las reglas de salud</h2>
+<p>En el kit, el selector êÂ«cargar ejemplo por êÂ¡reaêÂ» tiene la opciêÂ³n salud. Al cargarlo, el campo êÂ«êÂ¡reaêÂ» queda en salud y se activan tres verificaciones que el kit hace automêÂ¡ticamente, ademêÂ¡s de las generales del curso base: si los datos de salud (historia clêÂ­nica, diagnêÂ³stico, informe, examen) no estêÂ¡n en la lista de elementos fuera de alcance, aparece una omisiêÂ³n; si alguna acciêÂ³n u objetivo incluye un têÂ©rmino clêÂ­nico (diagnêÂ³stico, prescripciêÂ³n, conducta), aparece otra; si LGPD, consentimiento o confidencialidad no aparecen en ninguna parte, aparece una tercera.</p>
+<p>Esto parece una pantalla llena de campos, pero funciona como la ficha de admisiêÂ³n del paciente: cada campo es una pregunta que respondes una vez, y el kit arma la pêÂ¡gina por sêÂ­ solo. Si borras por accidente una restricciêÂ³n de confidencialidad, la omisiêÂ³n aparece debajo de la especificaciêÂ³n antes de que la entregues.</p>
+<!-- ex-prof --><p>Al adaptar el preset para los planes de tratamiento, PatrêÂ­cia escribiêÂ³ en el objetivo "retomar el contacto con pacientes que recibieron un plan e indicar el tratamiento pendiente". El kit marcêÂ³: "alguna acciêÂ³n u objetivo parece clêÂ­nico". Ella lo cambiêÂ³ por "retomar el contacto con pacientes que recibieron un plan y agendar una conversaciêÂ³n con la dentista". La dentista es quien habla del tratamiento pendiente. Fue la brecha que mêÂ¡s agradeciêÂ³ que se seêÂ±alara.</p>
 <div class="mobfig" data-mobfig="2"></div>
-<button class="readbtn" data-read="s2">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s2">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="3" data-kind="fundamento">
-<h2><span class="n">03</span> QuÃ© cambiar en el preset, bloque por bloque</h2>
-<p>La adaptaciÃ³n sigue un orden que evita olvidar lo esencial. Empieza por el bloque 1 con el nombre de tu clÃ­nica y el resultado expresado a tu manera. En el bloque 2, cambia las decisiones de reglas por tus lÃ­mites (horario del segundo mensaje, monto de glosa que marca la diferencia). En los bloques 3 a 5, el texto estÃ¡ndar, los convenios, los sistemas reales y el inventario con sus responsables. En los bloques 6 y 7, tus criterios para detenerse y pedir ayuda, tu baterÃ­a y los nombres de las personas.</p>
-<p>Lo que no debes cambiar sin pensarlo dos veces: la lista de datos fuera de alcance, la restricciÃ³n de confidencialidad, Â«recurso al convenio: con aprobaciÃ³nÂ» y Â«aprobar: no puedeÂ». Esas lÃ­neas son la razÃ³n por la que el dueÃ±o de la clÃ­nica dice que sÃ­. Si necesitas flexibilizar alguna, hazlo despuÃ©s de un mes de registro limpio, un paso a la vez, como enseÃ±a el curso base.</p>
-<!-- ex-prof --><p>Renata tardÃ³ veinte minutos en la adaptaciÃ³n y la parte que mÃ¡s tiempo llevÃ³ fue el conjunto de casos: elegir quince consultas y objeciones de marzo que cubrieran los casos difÃ­ciles (menor sin responsable, paciente con dos registros, objeciÃ³n repetida). No copiÃ³ ningÃºn nombre al kit: escribiÃ³ "consulta 7 del martes, 14h, Dra. Amaral" y guardÃ³ la referencia real en la hoja de cÃ¡lculo de la clÃ­nica.</p>
+<h2><span class="n">03</span> QuêÂ© cambiar en el preset, bloque por bloque</h2>
+<p>La adaptaciêÂ³n sigue un orden que evita olvidar lo esencial. Empieza por el bloque 1 con el nombre de tu clêÂ­nica y el resultado expresado a tu manera. En el bloque 2, cambia las decisiones de reglas por tus lêÂ­mites (horario del segundo mensaje, monto de glosa que marca la diferencia). En los bloques 3 a 5, el texto estêÂ¡ndar, los convenios, los sistemas reales y el inventario con sus responsables. En los bloques 6 y 7, tus criterios para detenerse y pedir ayuda, tu baterêÂ­a y los nombres de las personas.</p>
+<p>Lo que no debes cambiar sin pensarlo dos veces: la lista de datos fuera de alcance, la restricciêÂ³n de confidencialidad, êÂ«recurso al convenio: con aprobaciêÂ³nêÂ» y êÂ«aprobar: no puedeêÂ». Esas lêÂ­neas son la razêÂ³n por la que el dueêÂ±o de la clêÂ­nica dice que sêÂ­. Si necesitas flexibilizar alguna, hazlo despuêÂ©s de un mes de registro limpio, un paso a la vez, como enseêÂ±a el curso base.</p>
+<!-- ex-prof --><p>Renata tardêÂ³ veinte minutos en la adaptaciêÂ³n y la parte que mêÂ¡s tiempo llevêÂ³ fue el conjunto de casos: elegir quince consultas y objeciones de marzo que cubrieran los casos difêÂ­ciles (menor sin responsable, paciente con dos registros, objeciêÂ³n repetida). No copiêÂ³ ningêÂºn nombre al kit: escribiêÂ³ "consulta 7 del martes, 14h, Dra. Amaral" y guardêÂ³ la referencia real en la hoja de cêÂ¡lculo de la clêÂ­nica.</p>
 <div class="qsteps">
-<p class="qsk">Orden de adaptaciÃ³n del preset de salud</p>
+<p class="qsk">Orden de adaptaciêÂ³n del preset de salud</p>
 <ol>
-<li><b>Bloque 1</b>: nombre de la clÃ­nica, resultado expresado con tus palabras, quiÃ©n participa hoy.</li>
-<li><b>Bloques 2 y 3</b>: tus lÃ­mites para las decisiones de reglas; convenios, horario y texto estÃ¡ndar en el contexto. No elimines la restricciÃ³n de confidencialidad.</li>
-<li><b>Bloques 4 y 5</b>: sistemas reales con puerto de servicio (sÃ­, no, ?) e inventario con responsables reales.</li>
-<li><b>Bloque 6</b>: tus criterios para detenerse y pedir ayuda; baterÃ­a de 10 a 20 casos de referencia, sin nombres de pacientes, incluidos 3 difÃ­ciles.</li>
-<li><b>Bloque 7</b>: nombres de las personas; no cambies Â«aprobar: no se puedeÂ» ni la lista de datos excluidos sin un mes de registro limpio.</li>
-<li><b>Omisiones</b>: lee la lista debajo de la especificaciÃ³n; cero vacÃ­os sobre salud antes de ensayar.</li>
+<li><b>Bloque 1</b>: nombre de la clêÂ­nica, resultado expresado con tus palabras, quiêÂ©n participa hoy.</li>
+<li><b>Bloques 2 y 3</b>: tus lêÂ­mites para las decisiones de reglas; convenios, horario y texto estêÂ¡ndar en el contexto. No elimines la restricciêÂ³n de confidencialidad.</li>
+<li><b>Bloques 4 y 5</b>: sistemas reales con puerto de servicio (sêÂ­, no, ?) e inventario con responsables reales.</li>
+<li><b>Bloque 6</b>: tus criterios para detenerse y pedir ayuda; baterêÂ­a de 10 a 20 casos de referencia, sin nombres de pacientes, incluidos 3 difêÂ­ciles.</li>
+<li><b>Bloque 7</b>: nombres de las personas; no cambies êÂ«aprobar: no se puedeêÂ» ni la lista de datos excluidos sin un mes de registro limpio.</li>
+<li><b>Omisiones</b>: lee la lista debajo de la especificaciêÂ³n; cero vacêÂ­os sobre salud antes de ensayar.</li>
 </ol>
 </div>
 <div class="mobfig" data-mobfig="3"></div>
-<button class="readbtn" data-read="s3">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s3">marcar como leêÂ­do</button>
 </section>
 <section class="step" data-fig="4" data-kind="fundamento">
-<h2><span class="n">04</span> Lo que el ensayo simulado suele revelar en una clÃ­nica</h2>
-<p>Cuando pegas la especificaciÃ³n en el chat con el prompt de ensayo del kit, el chat hace de coordinador y ejecuta un caso ficticio. En las clÃ­nicas, suelen aparecer tres brechas. La primera: el paciente responde con una pregunta; la especificaciÃ³n indica derivarla a recepciÃ³n, pero no dice cÃ³mo se avisa a recepciÃ³n. La segunda: una objeciÃ³n por un motivo que no estÃ¡ en la lista, y el coordinador no sabe si debe detenerse. La tercera: un paciente tiene dos registros y nadie indicÃ³ cuÃ¡l usar.</p>
-<p>Cada una se convierte en una nueva lÃ­nea. "Avisar a recepciÃ³n con la lista de las 8h, no con un mensaje aislado." "Glosa por un motivo que no estÃ¡ en la lista: detenerse y escalar a la gestora." Ejecuta tres casos: uno comÃºn, uno difÃ­cil y la excepciÃ³n. Cuando los tres pasan, la pÃ¡gina estÃ¡ lista para la persona responsable de la clÃ­nica y para quien se ocupa del sistema.</p>
-<!-- ex-prof --><p>En el ensayo de Renata, el chat, en el papel de coordinador, preguntÃ³: Â«la paciente de 17 aÃ±os no tiene un responsable registrado; Â¿le envÃ­o el mensaje a su telÃ©fono?Â». La especificaciÃ³n decÃ­a Â«solo contactar a menores por medio de su responsableÂ», pero no indicaba quÃ© hacer si no habÃ­a ninguno. Ella agregÃ³: Â«menor sin responsable registrado: no enviar; dejar el caso para que recepciÃ³n llameÂ». Diez minutos de ensayo y una lÃ­nea que evitarÃ­a enviar un mensaje a un adolescente sin autorizaciÃ³n.</p>
+<h2><span class="n">04</span> Lo que el ensayo simulado suele revelar en una clêÂ­nica</h2>
+<p>Cuando pegas la especificaciêÂ³n en el chat con el prompt de ensayo del kit, el chat hace de coordinador y ejecuta un caso ficticio. En las clêÂ­nicas, suelen aparecer tres brechas. La primera: el paciente responde con una pregunta; la especificaciêÂ³n indica derivarla a recepciêÂ³n, pero no dice cêÂ³mo se avisa a recepciêÂ³n. La segunda: una objeciêÂ³n por un motivo que no estêÂ¡ en la lista, y el coordinador no sabe si debe detenerse. La tercera: un paciente tiene dos registros y nadie indicêÂ³ cuêÂ¡l usar.</p>
+<p>Cada una se convierte en una nueva lêÂ­nea. "Avisar a recepciêÂ³n con la lista de las 8h, no con un mensaje aislado." "Glosa por un motivo que no estêÂ¡ en la lista: detenerse y escalar a la gestora." Ejecuta tres casos: uno comêÂºn, uno difêÂ­cil y la excepciêÂ³n. Cuando los tres pasan, la pêÂ¡gina estêÂ¡ lista para la persona responsable de la clêÂ­nica y para quien se ocupa del sistema.</p>
+<!-- ex-prof --><p>En el ensayo de Renata, el chat, en el papel de coordinador, preguntêÂ³: êÂ«la paciente de 17 aêÂ±os no tiene un responsable registrado; êÂ¿le envêÂ­o el mensaje a su telêÂ©fono?êÂ». La especificaciêÂ³n decêÂ­a êÂ«solo contactar a menores por medio de su responsableêÂ», pero no indicaba quêÂ© hacer si no habêÂ­a ninguno. Ella agregêÂ³: êÂ«menor sin responsable registrado: no enviar; dejar el caso para que recepciêÂ³n llameêÂ». Diez minutos de ensayo y una lêÂ­nea que evitarêÂ­a enviar un mensaje a un adolescente sin autorizaciêÂ³n.</p>
 <div class="mobfig" data-mobfig="4"></div>
-<button class="readbtn" data-read="s4">marcar como leÃ­do</button>
+<button class="readbtn" data-read="s4">marcar como leêÂ­do</button>
 </section>
 <section class="practice" data-mode="prompt" data-practice="p3">
 <p class="pk">Practica ahora <span class="pcount">0/4 completado</span></p>
-<h3 class="ph">Arma la especificaciÃ³n de tu clÃ­nica en el kit y ensÃ¡yala</h3>
-<p class="pgoal">En unos 15 minutos, carga el preset de salud en el kit, adÃ¡ptalo a tu clÃ­nica, copia el prompt de ensayo y ejecuta un caso ficticio en un chat de IA para recibir la lista de brechas.</p>
-<p class="psafe">La especificaciÃ³n no incluye datos de pacientes: incluye reglas, nombres de sistemas y criterios. El caso del ensayo es inventado (nombre, edad, guÃ­a, monto). No se construye ningÃºn agente, no se toca ningÃºn sistema ni se envÃ­a ningÃºn mensaje. Si el chat "envÃ­a" algo en la simulaciÃ³n sin pedir aprobaciÃ³n, es un hallazgo sobre tu matriz: anÃ³talo y pulsa.</p>
+<h3 class="ph">Arma la especificaciêÂ³n de tu clêÂ­nica en el kit y ensêÂ¡yala</h3>
+<p class="pgoal">En unos 15 minutos, carga el preset de salud en el kit, adêÂ¡ptalo a tu clêÂ­nica, copia el prompt de ensayo y ejecuta un caso ficticio en un chat de IA para recibir la lista de brechas.</p>
+<p class="psafe">La especificaciêÂ³n no incluye datos de pacientes: incluye reglas, nombres de sistemas y criterios. El caso del ensayo es inventado (nombre, edad, guêÂ­a, monto). No se construye ningêÂºn agente, no se toca ningêÂºn sistema ni se envêÂ­a ningêÂºn mensaje. Si el chat "envêÂ­a" algo en la simulaciêÂ³n sin pedir aprobaciêÂ³n, es un hallazgo sobre tu matriz: anêÂ³talo y pulsa.</p>
 <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Passo a passo (o prompt de ensaio vem pronto do kit):
 
 1. Abra https://linnoff88-dev.github.io/
-2. "carregar exemplo por Ã¡rea" â†’ saÃºde. Confira que "Ã¡rea: saÃºde (administrativo)" ficou marcada.
-3. Adapte os sete blocos na ordem do passo 03 desta aula. Zero lacunas de saÃºde na lista abaixo da especificaÃ§Ã£o.
-4. Em "Prompt de ensaio simulado", escreva o caso fictÃ­cio, por exemplo:
-   &lt;Paciente LÃºcia F. (fictÃ­cia), 17 anos, consulta quinta 14h com a Dra. Amaral, sem resposta atÃ© as 20h, responsÃ¡vel nÃ£o cadastrado; guia 88213 glosada pelo convÃªnio Vida por cÃ³digo divergente, 380 reais&gt;
-5. "copiar prompt com a especificaÃ§Ã£o" â†’ cole numa conversa nova do seu chat de IA.
-6. Leia a narraÃ§Ã£o: o coordenador deve parar pelo menos uma vez (menor sem responsÃ¡vel, recurso com aprovaÃ§Ã£o). Anote os itens de "o que faltou".</pre></div>
+2. "carregar exemplo por êÂ¡rea" ê¢â â saêÂºde. Confira que "êÂ¡rea: saêÂºde (administrativo)" ficou marcada.
+3. Adapte os sete blocos na ordem do passo 03 desta aula. Zero lacunas de saêÂºde na lista abaixo da especificaêÂ§êÂ£o.
+4. Em "Prompt de ensaio simulado", escreva o caso fictêÂ­cio, por exemplo:
+   &lt;Paciente LêÂºcia F. (fictêÂ­cia), 17 anos, consulta quinta 14h com a Dra. Amaral, sem resposta atêÂ© as 20h, responsêÂ¡vel nêÂ£o cadastrado; guia 88213 glosada pelo convêÂªnio Vida por cêÂ³digo divergente, 380 reais&gt;
+5. "copiar prompt com a especificaêÂ§êÂ£o" ê¢â â cole numa conversa nova do seu chat de IA.
+6. Leia a narraêÂ§êÂ£o: o coordenador deve parar pelo menos uma vez (menor sem responsêÂ¡vel, recurso com aprovaêÂ§êÂ£o). Anote os itens de "o que faltou".</pre></div>
 <ol class="psteps">
-<li><label><input data-ptask="1" type="checkbox"/> Carga el preset de salud y adapta los bloques 1 a 7 a tu clÃ­nica, en el orden del paso 03. EstarÃ¡ bien cuando la lista de brechas no tenga ningÃºn elemento que empiece con "Salud:".</label></li>
-<li><label><input data-ptask="2" type="checkbox"/> Escribe un caso ficticio con al menos un punto difÃ­cil (menor sin responsable, dos registros, objeciÃ³n de facturaciÃ³n fuera de la lista, pregunta del paciente). Inventa los nombres, las edades y los valores.</label></li>
-<li><label><input data-ptask="3" type="checkbox"/> Copia el prompt con la especificaciÃ³n, pÃ©galo en una conversaciÃ³n nueva y sÃ­guela. El coordinador debe detenerse al menos una vez para pedir aprobaciÃ³n o hacer una pregunta. Si ejecutÃ³ todo directamente, la matriz o la ficha estÃ¡n poco definidas: anota dÃ³nde deberÃ­a haberse detenido.</label></li>
-<li><label><input data-ptask="4" type="checkbox"/> Lee la lista de Â«lo que faltÃ³Â» y agrega cada elemento como una lÃ­nea nueva en algÃºn bloque del kit. EstarÃ¡ listo cuando la especificaciÃ³n corregida tenga al menos una lÃ­nea nueva, hayas descargado el .md y sepas a quiÃ©n se lo vas a enviar: al dueÃ±o de la clÃ­nica y a quien se encarga del sistema.</label></li>
+<li><label><input data-ptask="1" type="checkbox"/> Carga el preset de salud y adapta los bloques 1 a 7 a tu clêÂ­nica, en el orden del paso 03. EstarêÂ¡ bien cuando la lista de brechas no tenga ningêÂºn elemento que empiece con "Salud:".</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Escribe un caso ficticio con al menos un punto difêÂ­cil (menor sin responsable, dos registros, objeciêÂ³n de facturaciêÂ³n fuera de la lista, pregunta del paciente). Inventa los nombres, las edades y los valores.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Copia el prompt con la especificaciêÂ³n, pêÂ©galo en una conversaciêÂ³n nueva y sêÂ­guela. El coordinador debe detenerse al menos una vez para pedir aprobaciêÂ³n o hacer una pregunta. Si ejecutêÂ³ todo directamente, la matriz o la ficha estêÂ¡n poco definidas: anota dêÂ³nde deberêÂ­a haberse detenido.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Lee la lista de êÂ«lo que faltêÂ³êÂ» y agrega cada elemento como una lêÂ­nea nueva en algêÂºn bloque del kit. EstarêÂ¡ listo cuando la especificaciêÂ³n corregida tenga al menos una lêÂ­nea nueva, hayas descargado el .md y sepas a quiêÂ©n se lo vas a enviar: al dueêÂ±o de la clêÂ­nica y a quien se encarga del sistema.</label></li>
 </ol>
-<p class="pdone">Acabas de elaborar la especificaciÃ³n de un agente para tu clÃ­nica, con la historia clÃ­nica fuera, y la ensayaste antes de construir nada. Esta pÃ¡gina es lo que distingue "vamos a usar IA" de un proyecto que el dueÃ±o firma.</p>
+<p class="pdone">Acabas de elaborar la especificaciêÂ³n de un agente para tu clêÂ­nica, con la historia clêÂ­nica fuera, y la ensayaste antes de construir nada. Esta pêÂ¡gina es lo que distingue "vamos a usar IA" de un proyecto que el dueêÂ±o firma.</p>
 </section>
 </div>
 <aside class="rail"><div class="railsticky">
 <div class="figstage">
-<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o preset como esqueleto (cinza) e o que muda por clÃ­nica (verde): convÃªnios, horÃ¡rio, texto padrÃ£o, donos, limites, bateria. As linhas Ã¢mbar sÃ£o as que nÃ£o se trocam sem pensar: dados fora do alcance, sigilo, recurso com aprovaÃ§Ã£o, aprovar nÃ£o pode." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o preset como esqueleto (cinza) e o que muda por clêÂ­nica (verde): convêÂªnios, horêÂ¡rio, texto padrêÂ£o, donos, limites, bateria. As linhas êÂ¢mbar sêÂ£o as que nêÂ£o se trocam sem pensar: dados fora do alcance, sigilo, recurso com aprovaêÂ§êÂ£o, aprovar nêÂ£o pode." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect height="172" rx="8" stroke="#37324a" stroke-width="1.5" width="192" x="14" y="14"></rect>
-<text fill="#948DA6" font-family="monospace" font-size="7.5" x="20" y="30">preset de salud: clÃ­nica de Renata</text>
+<text fill="#948DA6" font-family="monospace" font-size="7.5" x="20" y="30">preset de salud: clêÂ­nica de Renata</text>
 <g font-family="monospace" font-size="6.5">
 <rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="86" x="20" y="40"></rect><text fill="#0E0D14" x="24" y="50">convenios</text>
-<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="90" x="110" y="40"></rect><text fill="#0E0D14" x="114" y="50">horario de envÃ­o</text>
-<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="86" x="20" y="60"></rect><text fill="#0E0D14" x="24" y="70">texto estÃ¡ndar</text>
+<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="90" x="110" y="40"></rect><text fill="#0E0D14" x="114" y="50">horario de envêÂ­o</text>
+<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="86" x="20" y="60"></rect><text fill="#0E0D14" x="24" y="70">texto estêÂ¡ndar</text>
 <rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="90" x="110" y="60"></rect><text fill="#0E0D14" x="114" y="70">responsables identificados por nombre</text>
-<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="86" x="20" y="80"></rect><text fill="#0E0D14" x="24" y="90">lÃ­mites para detenerse/llamar</text>
-<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="90" x="110" y="80"></rect><text fill="#0E0D14" x="114" y="90">baterÃ­a de casos</text>
-<rect height="14" rx="2" stroke="#F2B45C" stroke-width="1.2" width="180" x="20" y="108"></rect><text fill="#F2B45C" x="24" y="118">datos excluidos: historia clÃ­nica, motivo, exÃ¡menes, CPF</text>
-<rect height="14" rx="2" stroke="#F2B45C" stroke-width="1.2" width="180" x="20" y="128"></rect><text fill="#F2B45C" x="24" y="138">restricciÃ³n de confidencialidad y LGPD</text>
-<rect height="14" rx="2" stroke="#F2B45C" stroke-width="1.2" width="180" x="20" y="148"></rect><text fill="#F2B45C" x="24" y="158">recurso: con aprobaciÃ³n Â· aprobar: no</text>
+<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="86" x="20" y="80"></rect><text fill="#0E0D14" x="24" y="90">lêÂ­mites para detenerse/llamar</text>
+<rect fill="#7CE0C6" height="14" opacity=".8" rx="2" width="90" x="110" y="80"></rect><text fill="#0E0D14" x="114" y="90">baterêÂ­a de casos</text>
+<rect height="14" rx="2" stroke="#F2B45C" stroke-width="1.2" width="180" x="20" y="108"></rect><text fill="#F2B45C" x="24" y="118">datos excluidos: historia clêÂ­nica, motivo, exêÂ¡menes, CPF</text>
+<rect height="14" rx="2" stroke="#F2B45C" stroke-width="1.2" width="180" x="20" y="128"></rect><text fill="#F2B45C" x="24" y="138">restricciêÂ³n de confidencialidad y LGPD</text>
+<rect height="14" rx="2" stroke="#F2B45C" stroke-width="1.2" width="180" x="20" y="148"></rect><text fill="#F2B45C" x="24" y="158">recurso: con aprobaciêÂ³n êÂ· aprobar: no</text>
 </g>
-<text fill="#6C6580" font-family="monospace" font-size="7" x="20" y="180">verde = intercambio Â· Ã¡mbar = solo despuÃ©s de 1 mes sin incidentes</text>
+<text fill="#6C6580" font-family="monospace" font-size="7" x="20" y="180">verde = intercambio êÂ· êÂ¡mbar = solo despuêÂ©s de 1 mes sin incidentes</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; ao marcar 'Ã¡rea: saÃºde', o kit liga trÃªs verificaÃ§Ãµes a mais: dado de saÃºde na lista de fora, palavra clÃ­nica em aÃ§Ã£o ou objetivo, e menÃ§Ã£o a LGPD/consentimento/sigilo. Cada uma acende uma lacuna (Ã¢mbar) abaixo da especificaÃ§Ã£o antes de vocÃª entregar." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
-<rect height="22" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="120" x="14" y="16"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="20" y="31">Ã¡rea: salud</text>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; ao marcar 'êÂ¡rea: saêÂºde', o kit liga trêÂªs verificaêÂ§êÂµes a mais: dado de saêÂºde na lista de fora, palavra clêÂ­nica em aêÂ§êÂ£o ou objetivo, e menêÂ§êÂ£o a LGPD/consentimento/sigilo. Cada uma acende uma lacuna (êÂ¢mbar) abaixo da especificaêÂ§êÂ£o antes de vocêÂª entregar." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect height="22" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="120" x="14" y="16"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="20" y="31">êÂ¡rea: salud</text>
 <path d="M74 38 v14 M30 52 h88 M30 52 v10 M74 52 v10 M118 52 v10" stroke="#948DA6" stroke-width="1.2"></path>
 <g fill="#ECE6D9" font-family="monospace" font-size="6.5">
-<rect height="34" rx="3" stroke="#948DA6" stroke-width="1" width="60" x="8" y="62"></rect><text x="12" y="76">dato de</text><text x="12" y="86">Â¿salud fuera?</text>
-<rect height="34" rx="3" stroke="#948DA6" stroke-width="1" width="60" x="74" y="62"></rect><text x="78" y="76">palabra</text><text x="78" y="86">Â¿clÃ­nica?</text>
-<rect height="34" rx="3" stroke="#948DA6" stroke-width="1" width="66" x="140" y="62"></rect><text x="144" y="76">LGPD/confidencialidad</text><text x="144" y="86">Â¿escritos?</text>
+<rect height="34" rx="3" stroke="#948DA6" stroke-width="1" width="60" x="8" y="62"></rect><text x="12" y="76">dato de</text><text x="12" y="86">êÂ¿salud fuera?</text>
+<rect height="34" rx="3" stroke="#948DA6" stroke-width="1" width="60" x="74" y="62"></rect><text x="78" y="76">palabra</text><text x="78" y="86">êÂ¿clêÂ­nica?</text>
+<rect height="34" rx="3" stroke="#948DA6" stroke-width="1" width="66" x="140" y="62"></rect><text x="144" y="76">LGPD/confidencialidad</text><text x="144" y="86">êÂ¿escritos?</text>
 </g>
 <path d="M38 96 v14 M104 96 v14 M173 96 v14" stroke="#F2B45C" stroke-width="1.2"></path>
 <rect fill="#221f2e" height="60" rx="6" stroke="#37324a" stroke-width="1" width="192" x="14" y="110"></rect>
 <text fill="#948DA6" font-family="monospace" font-size="7" x="20" y="124">brechas</text>
 <rect fill="#F2B45C" height="10" opacity=".7" rx="2" width="180" x="20" y="130"></rect><rect fill="#F2B45C" height="10" opacity=".7" rx="2" width="180" x="20" y="144"></rect><rect fill="#F2B45C" height="8" opacity=".7" rx="2" width="180" x="20" y="158"></rect>
-<text fill="#6C6580" font-family="monospace" font-size="7" x="20" y="188">antes de entregar, no despuÃ©s</text>
+<text fill="#6C6580" font-family="monospace" font-size="7" x="20" y="188">antes de entregar, no despuêÂ©s</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a ordem de adaptaÃ§Ã£o, do bloco 1 ao 7 e depois a lista de lacunas. Os blocos 6 e 7 tÃªm a marca Ã¢mbar: Ã© onde mora o que nÃ£o se afrouxa na primeira versÃ£o." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; a ordem de adaptaêÂ§êÂ£o, do bloco 1 ao 7 e depois a lista de lacunas. Os blocos 6 e 7 têÂªm a marca êÂ¢mbar: êÂ© onde mora o que nêÂ£o se afrouxa na primeira versêÂ£o." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <g fill="#ECE6D9" font-family="monospace" font-size="7">
-<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="192" x="14" y="14"></rect><text x="20" y="26">1 Â· clÃ­nica y resultado</text>
-<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="192" x="14" y="38"></rect><text x="20" y="50">2Â·3 Â· lÃ­mites, convenios, texto estÃ¡ndar</text>
-<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="192" x="14" y="62"></rect><text x="20" y="74">4Â·5 Â· sistemas e inventario con responsables</text>
-<rect height="18" rx="3" stroke="#F2B45C" stroke-width="1.2" width="192" x="14" y="86"></rect><text x="20" y="98">6 Â· detenerse, avisar, baterÃ­a sin nombres</text>
-<rect height="18" rx="3" stroke="#F2B45C" stroke-width="1.2" width="192" x="14" y="110"></rect><text x="20" y="122">7 Â· nombres; no modificar aprobar/externo</text>
+<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="192" x="14" y="14"></rect><text x="20" y="26">1 êÂ· clêÂ­nica y resultado</text>
+<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="192" x="14" y="38"></rect><text x="20" y="50">2êÂ·3 êÂ· lêÂ­mites, convenios, texto estêÂ¡ndar</text>
+<rect height="18" rx="3" stroke="#7CE0C6" stroke-width="1.2" width="192" x="14" y="62"></rect><text x="20" y="74">4êÂ·5 êÂ· sistemas e inventario con responsables</text>
+<rect height="18" rx="3" stroke="#F2B45C" stroke-width="1.2" width="192" x="14" y="86"></rect><text x="20" y="98">6 êÂ· detenerse, avisar, baterêÂ­a sin nombres</text>
+<rect height="18" rx="3" stroke="#F2B45C" stroke-width="1.2" width="192" x="14" y="110"></rect><text x="20" y="122">7 êÂ· nombres; no modificar aprobar/externo</text>
 </g>
 <path d="M110 128 v12" stroke="#948DA6" stroke-width="1.2"></path>
-<rect fill="#221f2e" height="22" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="192" x="14" y="140"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="20" y="155">brechas de salud = 0 â†’ ensayar</text>
-<text fill="#6C6580" font-family="monospace" font-size="7" x="14" y="186">20 min; lo que mÃ¡s demora es la baterÃ­a de pruebas</text>
+<rect fill="#221f2e" height="22" rx="4" stroke="#7CE0C6" stroke-width="1.5" width="192" x="14" y="140"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7.5" x="20" y="155">brechas de salud = 0 ê¢â â ensayar</text>
+<text fill="#6C6580" font-family="monospace" font-size="7" x="14" y="186">20 min; lo que mêÂ¡s demora es la baterêÂ­a de pruebas</text>
 </svg></div>
-<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o ciclo do ensaio numa clÃ­nica: especificaÃ§Ã£o e caso fictÃ­cio entram, o chat faz o coordenador, e as trÃªs lacunas tÃ­picas (como avisar a recepÃ§Ã£o, glosa fora da lista, dois cadastros) voltam em Ã¢mbar e viram linhas novas. TrÃªs casos passando, a pÃ¡gina vai para o dono e para o sistema." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; o ciclo do ensaio numa clêÂ­nica: especificaêÂ§êÂ£o e caso fictêÂ­cio entram, o chat faz o coordenador, e as trêÂªs lacunas têÂ­picas (como avisar a recepêÂ§êÂ£o, glosa fora da lista, dois cadastros) voltam em êÂ¢mbar e viram linhas novas. TrêÂªs casos passando, a pêÂ¡gina vai para o dono e para o sistema." data-fig="4"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
 <rect fill="#221f2e" height="56" rx="6" stroke="#7CE0C6" stroke-width="1.5" width="62" x="12" y="66"></rect><text fill="#7CE0C6" font-family="monospace" font-size="7" x="18" y="90">especif.</text><text fill="#948DA6" font-family="monospace" font-size="6.5" x="18" y="104">+ caso ficticio</text>
 <path d="M74 94 h30" stroke="#948DA6" stroke-width="1.5"></path>
 <rect height="76" rx="10" stroke="#37324a" stroke-width="1.5" width="104" x="104" y="56"></rect><rect fill="#221f2e" height="14" rx="10" width="104" x="104" y="56"></rect>
 <text fill="#ECE6D9" font-family="monospace" font-size="7" x="112" y="84">chat = coordinador</text>
 <g fill="#F2B45C" font-family="monospace" font-size="6">
-<rect height="9" rx="2" stroke="#F2B45C" stroke-width="1" width="92" x="110" y="92"></rect><text x="114" y="99">Â¿cÃ³mo avisar a recepciÃ³n?</text>
-<rect height="9" rx="2" stroke="#F2B45C" stroke-width="1" width="92" x="110" y="104"></rect><text x="114" y="111">Â¿glosa fuera de la lista?</text>
-<rect height="9" rx="2" stroke="#F2B45C" stroke-width="1" width="92" x="110" y="116"></rect><text x="114" y="123">Â¿dos registros?</text>
+<rect height="9" rx="2" stroke="#F2B45C" stroke-width="1" width="92" x="110" y="92"></rect><text x="114" y="99">êÂ¿cêÂ³mo avisar a recepciêÂ³n?</text>
+<rect height="9" rx="2" stroke="#F2B45C" stroke-width="1" width="92" x="110" y="104"></rect><text x="114" y="111">êÂ¿glosa fuera de la lista?</text>
+<rect height="9" rx="2" stroke="#F2B45C" stroke-width="1" width="92" x="110" y="116"></rect><text x="114" y="123">êÂ¿dos registros?</text>
 </g>
 <path d="M156 132 v20 h-114 v-30" fill="none" stroke="#F2B45C" stroke-width="1.5"></path><path d="M39 126 l3 -4 3 4" fill="none" stroke="#F2B45C" stroke-width="1.5"></path>
-<text fill="#F2B45C" font-family="monospace" font-size="7" x="50" y="168">brecha â†’ lÃ­nea nueva â†’ volver a ejecutar</text>
-<text fill="#948DA6" font-family="monospace" font-size="8" x="12" y="30">3 casos: comÃºn Â· difÃ­cil Â· excepciÃ³n</text>
-<text fill="#6C6580" font-family="monospace" font-size="7" x="12" y="192">3 pasan â†’ responsable de la clÃ­nica + sistema</text>
+<text fill="#F2B45C" font-family="monospace" font-size="7" x="50" y="168">brecha ê¢â â lêÂ­nea nueva ê¢â â volver a ejecutar</text>
+<text fill="#948DA6" font-family="monospace" font-size="8" x="12" y="30">3 casos: comêÂºn êÂ· difêÂ­cil êÂ· excepciêÂ³n</text>
+<text fill="#6C6580" font-family="monospace" font-size="7" x="12" y="192">3 pasan ê¢â â responsable de la clêÂ­nica + sistema</text>
 </svg></div>
 </div>
 <p class="railcap"></p>
@@ -672,44 +672,44 @@
 <div class="recap-autor">
 <p class="rak">Resumen</p>
 <ul>
-<li>El preset de salud incluye la clÃ­nica de Renata en los siete bloques, con las reglas del cuaderno incorporadas. Cambias los convenios, horarios, texto estÃ¡ndar, responsables, lÃ­mites y baterÃ­a; no cambias los datos fuera de alcance, la confidencialidad ni Â«aprobar: no puedeÂ» hasta tener un mes de registro limpio.</li>
-<li>Marcar Â«Ã¡rea: saludÂ» activa tres verificaciones mÃ¡s en el kit, que detectan omisiones antes de que entregues la pÃ¡gina.</li>
-<li>La adaptaciÃ³n sigue del bloque 1 al 7, y la parte que mÃ¡s tiempo lleva es la baterÃ­a de casos, siempre sin nombres de pacientes.</li>
-<li>El ensayo en una clÃ­nica suele revelar cÃ³mo avisar a recepciÃ³n, quÃ© hacer con una glosa que no estÃ¡ en la lista y quÃ© hacer con un paciente que tiene dos registros. Cada respuesta se convierte en una lÃ­nea nueva.</li>
+<li>El preset de salud incluye la clêÂ­nica de Renata en los siete bloques, con las reglas del cuaderno incorporadas. Cambias los convenios, horarios, texto estêÂ¡ndar, responsables, lêÂ­mites y baterêÂ­a; no cambias los datos fuera de alcance, la confidencialidad ni êÂ«aprobar: no puedeêÂ» hasta tener un mes de registro limpio.</li>
+<li>Marcar êÂ«êÂ¡rea: saludêÂ» activa tres verificaciones mêÂ¡s en el kit, que detectan omisiones antes de que entregues la pêÂ¡gina.</li>
+<li>La adaptaciêÂ³n sigue del bloque 1 al 7, y la parte que mêÂ¡s tiempo lleva es la baterêÂ­a de casos, siempre sin nombres de pacientes.</li>
+<li>El ensayo en una clêÂ­nica suele revelar cêÂ³mo avisar a recepciêÂ³n, quêÂ© hacer con una glosa que no estêÂ¡ en la lista y quêÂ© hacer con un paciente que tiene dos registros. Cada respuesta se convierte en una lêÂ­nea nueva.</li>
 </ul>
 </div>
 <div class="next-action">
-<p class="nak">Tu prÃ³ximo paso</p>
-<p class="na-win">Acabas de especificar y ensayar el agente de tu clÃ­nica, con la historia clÃ­nica fuera y una persona responsable por cada permiso.</p>
-<p class="na-action">En los prÃ³ximos 15 minutos, envÃ­ale el .md al dueÃ±o de la clÃ­nica con una frase: Â«esto es lo que hace el agente, esto es lo que nunca ve, esto es lo que no puede hacer y este es el responsable de cada lÃ­neaÂ». PÃ­dele ocho minutos para leerlo y que te haga una pregunta.</p>
-<p class="na-hook">El segundo proceso de los diez (lista de espera, planes de tratamiento, facturaciÃ³n) empieza en la lecciÃ³n 1 de este cuaderno, con el mismo kit y la misma matriz. Te tomarÃ¡ la mitad del tiempo.</p>
+<p class="nak">Tu prêÂ³ximo paso</p>
+<p class="na-win">Acabas de especificar y ensayar el agente de tu clêÂ­nica, con la historia clêÂ­nica fuera y una persona responsable por cada permiso.</p>
+<p class="na-action">En los prêÂ³ximos 15 minutos, envêÂ­ale el .md al dueêÂ±o de la clêÂ­nica con una frase: êÂ«esto es lo que hace el agente, esto es lo que nunca ve, esto es lo que no puede hacer y este es el responsable de cada lêÂ­neaêÂ». PêÂ­dele ocho minutos para leerlo y que te haga una pregunta.</p>
+<p class="na-hook">El segundo proceso de los diez (lista de espera, planes de tratamiento, facturaciêÂ³n) empieza en la lecciêÂ³n 1 de este cuaderno, con el mismo kit y la misma matriz. Te tomarêÂ¡ la mitad del tiempo.</p>
 </div>
 </div>
-<nav class="lnav"><a href="#aula-2">â† clase 2</a><a href="#trilha">completar el cuaderno â†’</a></nav>
-<footer>Clase 3 Â· Agentes en la ClÃ­nica Â· ARCKHÉ AI PRO</footer>
-<!-- aula PRÃTICA/INTEGRAÃ‡ÃƒO: 3 cartÃµes de aplicaÃ§Ã£o integradores, decisÃ£o registrada -->
+<nav class="lnav"><a href="#aula-2">ê¢â Â clase 2</a><a href="#trilha">completar el cuaderno ê¢â â</a></nav>
+<footer>Clase 3 êÂ· Agentes en la ClêÂ­nica êÂ· ARCKHê AI PRO</footer>
+<!-- aula PRêÂTICA/INTEGRAêâ¡êÆO: 3 cartêÂµes de aplicaêÂ§êÂ£o integradores, decisêÂ£o registrada -->
 <script id="cards-3" type="application/json">
 [
-  {"front":"Ao adaptar o preset, vocÃª escreveu no objetivo 'lembrar o paciente do tratamento pendente'. O kit acendeu uma lacuna. Qual, e como vocÃª reescreve?","back":"'Alguma aÃ§Ã£o ou objetivo parece clÃ­nico'. Tratamento pendente Ã© do profissional. Reescrever como 'agendar a conversa com a dentista sobre o plano apresentado'."},
-  {"front":"No ensaio, o coordenador enviou a confirmaÃ§Ã£o para uma paciente de 17 anos sem responsÃ¡vel cadastrado, sem perguntar. O que faltou na especificaÃ§Ã£o e em que bloco entra?","back":"A regra 'menor sem responsÃ¡vel cadastrado: nÃ£o enviar, separar para a recepÃ§Ã£o ligar'. Entra no bloco 2 (exceÃ§Ãµes) e no bloco 6 (parar). 'Menor sÃ³ pelo responsÃ¡vel' nÃ£o cobria o caso sem responsÃ¡vel."},
-  {"front":"O dono da clÃ­nica pergunta 'por que o agente nÃ£o pode responder quando o paciente pergunta se precisa de jejum?'. Que linha da especificaÃ§Ã£o vocÃª aponta, e o que ele ganha com ela?","back":"A restriÃ§Ã£o de sigilo e escopo: o agente sÃ³ trata de nome, data, horÃ¡rio e profissional; qualquer pergunta que nÃ£o Ã© de agenda vai para a recepÃ§Ã£o. Ele ganha a garantia de que nenhuma orientaÃ§Ã£o clÃ­nica sai de um agente, e a pergunta Ã© respondida por quem pode."}
+  {"front":"Ao adaptar o preset, vocêÂª escreveu no objetivo 'lembrar o paciente do tratamento pendente'. O kit acendeu uma lacuna. Qual, e como vocêÂª reescreve?","back":"'Alguma aêÂ§êÂ£o ou objetivo parece clêÂ­nico'. Tratamento pendente êÂ© do profissional. Reescrever como 'agendar a conversa com a dentista sobre o plano apresentado'."},
+  {"front":"No ensaio, o coordenador enviou a confirmaêÂ§êÂ£o para uma paciente de 17 anos sem responsêÂ¡vel cadastrado, sem perguntar. O que faltou na especificaêÂ§êÂ£o e em que bloco entra?","back":"A regra 'menor sem responsêÂ¡vel cadastrado: nêÂ£o enviar, separar para a recepêÂ§êÂ£o ligar'. Entra no bloco 2 (exceêÂ§êÂµes) e no bloco 6 (parar). 'Menor sêÂ³ pelo responsêÂ¡vel' nêÂ£o cobria o caso sem responsêÂ¡vel."},
+  {"front":"O dono da clêÂ­nica pergunta 'por que o agente nêÂ£o pode responder quando o paciente pergunta se precisa de jejum?'. Que linha da especificaêÂ§êÂ£o vocêÂª aponta, e o que ele ganha com ela?","back":"A restriêÂ§êÂ£o de sigilo e escopo: o agente sêÂ³ trata de nome, data, horêÂ¡rio e profissional; qualquer pergunta que nêÂ£o êÂ© de agenda vai para a recepêÂ§êÂ£o. Ele ganha a garantia de que nenhuma orientaêÂ§êÂ£o clêÂ­nica sai de um agente, e a pergunta êÂ© respondida por quem pode."}
 ]
 </script>
 <!-- COMPLETUDE aula-3 | tipo=PRATICA | steps=4
   [OK] promise            .promise no cold-open (1)
-  [OK] why                .why apÃ³s a promessa (1)
+  [OK] why                .why apêÂ³s a promessa (1)
   [OK] tempo              data-tempo="24min" no view + render no cold-open (1)
-  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Renata+PatrÃ­cia, PatrÃ­cia, Renata, Renata)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (4/4: Renata+PatrêÂ­cia, PatrêÂ­cia, Renata, Renata)
   [OK] apoio-visual       figura conceitual legendada em 100% dos steps (4/4, data-fig 1..4)
   [OK] practice           .practice[data-mode="prompt"] (exatamente 1)
-  [OK] psafe              .psafe dentro da prÃ¡tica (1)
+  [OK] psafe              .psafe dentro da prêÂ¡tica (1)
   [OK] pgoal-tempo        .pgoal com tempo declarado (~15 min) (1)
   [OK] recap-autor        .recap-autor no fecho (1)
   [OK] next-action        .next-action no fecho (1)
-  [OK] cards              <script id="cards-3"> presente (3 cartÃµes de aplicaÃ§Ã£o integradores)
-  [OK] anti-duplicacao    Â§11.3 â€” 3 testes passam (substring / forma / operaÃ§Ã£o)
-  [N/A] teste-se-FUND     aula Ã© PRÃTICA/INTEGRAÃ‡ÃƒO (obrigaÃ§Ã£o nÃ£o se aplica); sem teste-se opcional
-  dosagem: qsteps (step 03) + mini-caso integrador (prosa: Renata adaptando o preset e o ensaio, steps 01â€“04) obrigatÃ³rios + qapply opcional (step 01, 3 perfis) = 3 (teto 5). densidade: 2 quadros em 4 steps, nÃ£o adjacentes. data-versao no step 02. rampa de acesso antes da tela do kit ("ficha de admissÃ£o").
+  [OK] cards              <script id="cards-3"> presente (3 cartêÂµes de aplicaêÂ§êÂ£o integradores)
+  [OK] anti-duplicacao    êÂ§11.3 ê¢â¬â 3 testes passam (substring / forma / operaêÂ§êÂ£o)
+  [N/A] teste-se-FUND     aula êÂ© PRêÂTICA/INTEGRAêâ¡êÆO (obrigaêÂ§êÂ£o nêÂ£o se aplica); sem teste-se opcional
+  dosagem: qsteps (step 03) + mini-caso integrador (prosa: Renata adaptando o preset e o ensaio, steps 01ê¢â¬â04) obrigatêÂ³rios + qapply opcional (step 01, 3 perfis) = 3 (teto 5). densidade: 2 quadros em 4 steps, nêÂ£o adjacentes. data-versao no step 02. rampa de acesso antes da tela do kit ("ficha de admissêÂ£o").
 -->
 </section>
 <script src="../assets/curso.js"></script>
